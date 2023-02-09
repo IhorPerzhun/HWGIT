@@ -1,0 +1,32 @@
+h1,h3{
+    text-align: center;
+}
+img{
+    float: left;
+    margin-right: 30px;
+}
+main{
+    width: 600px;
+    margin: 10px auto;
+    border: 0.5px solid rgb(139, 135, 135);
+    padding: 20px;
+    
+}
+.clearfix{
+    clear: both;
+}
+.education, .work{
+    text-align: justify;
+}
+footer{
+    background-color: rgb(216, 210, 210);
+    text-align: center;
+    height: 30px;
+    margin-top: 20px;
+}
+a:hover{
+    color: green;
+}
+a:link{
+    color: blue;
+}

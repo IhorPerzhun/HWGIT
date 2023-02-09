@@ -11,6 +11,24 @@ body{
 }
 main{
    padding-left: 15%;
-   padding-top: 15%;
+   padding-top: 10%;
    padding-right: 5%;
+   padding-bottom: 5%;
+}
+
+#semantic a:link, a:visited{
+    color: black;
+}
+#semantic a:hover{
+    color: blue;
+}
+iframe{
+    width:100%;
+    
+}
+footer{
+    margin-top: 20px;
+}
+footer a:link, a:visited{
+    color: black;
 }

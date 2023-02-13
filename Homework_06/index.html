@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Registration form</title>
+</head>
+<body>
+    <header>
+        <div id="elem1">
+            <h1>Beetroot Academy</h1>
+        </div>
+    </header>
+    
+    <aside>
+        <nav>
+            <ul>
+                <li>
+                    <img src="images/beetroot.svg" alt="beetroot">
+                </li>
+                <li>
+                    <a href="#">Online courses</a>
+                </li>
+                <li><a href="#">Partner Programs</a>
+                </li>
+                <li>
+                    <a href="#">My courses</a>
+                </li>
+                <li>
+                    <a href="#">My profile</a>
+                </li>
+                <li>
+                    <a href="#">Payment history</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+        
+    
+    <main>
+        <section class="registration">
+            <div class="container">
+                    <h3>Реєстрація на сайті</h3>
+                    <form action="#" method="post">
+                        <fieldset id="general">
+                            <legend>Основна информація</legend>
+                            <div class="c">
+                                <label for="name">Повне ім'я</label>
+                            <input type="text" name="name" id="name" placeholder="Введіть ім'я латинецею" required>
+                            
+                            </div>
+                            <br><br>
+                            <div class="c">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="example@mail.com" required>
+                            </div>
+                            <br>
+                            <div class="c">
+                                <label for="password">Пароль</label>
+                                <input type="password" name="password" id="password" placeholder="Введіть пароль" required>
+                            </div>
+                            <br>
+                            <div class="c">
+                                <label for="password">Пароль ще раз</label>
+                                <input type="password" name="password" id="password" placeholder="Підтвердіть пароль" required>
+                            </div>
+                            <br>
+                            <div class="nc">
+                                <label for="gender">Стать</label>
+                                <input type="radio" name="gender" id="gender" value="male" checked> чоловіча
+                                <input type="radio" name="gender" id="gender" value="female"> жіноча
+                            </div>
+                            <br>
+                            <div class="c">
+                                <label for="age">Вік</label>
+                                <input type="number" id="age">
+                            </div>
+                            <br>
+                            <div class="nc">
+                                <label for="course">Курс</label>
+                                <select name="course" id="course" required>
+                                    <option value="HR">HR Generalist в IT</option>
+                                    <option value="Business analysis">Бізнес-аналіз в IT</option>
+                                    <option value="QA Manual">QA Manual</option>
+                                    <option value="Front-End">Front-End Розробка</option>
+                                    <option value="Python">Python Розробка</option>
+                                    <option value="Digital Marketing">Digital Marketing</option>
+                                    <option value="C#">C# Розробка</option>
+                                    <option value="UI/UX">UI/UX дизайн з нуля</option>
+                                    <option value="Project Management">Project Management в IT</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div class="c">
+                                <label for="address">Повна адреса</label>
+                                <textarea name="address" id="address" cols="18" rows="3" placeholder="Країна, регіон, місто/селище, вулиця"></textarea>
+                            </div>
+                            <br><br>
+                            <input type="checkbox" name="data_procesing">Я погоджуюсь з обробкою песональних даних
+                            
+                        </fieldset>
+                    <form action="#" method="get">
+                        <fieldset id="secondary">
+                            <legend>Додаткова інформація</legend>
+                            <p>Вкажіть наявні навички</p>
+                            <div class="skills">
+                                <div class="columm1">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" value="">HTML
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" value="">CSS
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" value="">JavaScript
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" value="">React
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="columm2">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" value="">TypeScript
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" value="">NodeJS
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" value="">PHP
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" value="">Lavarel
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="confirm">
+                                <button type="reset">Очистити форму</button>
+                                <button type="submit">Зареєструвватися</button>
+                            </div>
+                        </fieldset>
+                    </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

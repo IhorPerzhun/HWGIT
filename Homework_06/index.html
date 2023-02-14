@@ -63,14 +63,14 @@
                             </div>
                             <br>
                             <div class="c">
-                                <label for="password">Пароль ще раз</label>
-                                <input type="password" name="password" id="password" placeholder="Підтвердіть пароль" required>
+                                <label for="password_confirm">Пароль ще раз</label>
+                                <input type="password" name="password_confirm" id="password_confirm" placeholder="Підтвердіть пароль" required>
                             </div>
                             <br>
                             <div class="nc">
                                 <label for="gender">Стать</label>
-                                <input type="radio" name="gender" id="gender" value="male" checked> чоловіча
-                                <input type="radio" name="gender" id="gender" value="female"> жіноча
+                                <input type="radio" name="gender" id="gender_male" value="male" checked> чоловіча
+                                <input type="radio" name="gender" id="gender_female" value="female"> жіноча
                             </div>
                             <br>
                             <div class="c">
@@ -95,10 +95,11 @@
                             <br>
                             <div class="c">
                                 <label for="address">Повна адреса</label>
-                                <textarea name="address" id="address" cols="18" rows="3" placeholder="Країна, регіон, місто/селище, вулиця"></textarea>
+                                <textarea name="address" id="address" cols="18" rows="3" placeholder="Країна, регіон, місто/селище, вулиця" required></textarea>
                             </div>
                             <br><br>
-                            <input type="checkbox" name="data_procesing">Я погоджуюсь з обробкою песональних даних
+                            <input type="checkbox" name="data_procesing" id="data_procesing" required>
+                            <label for="data_procesing">Я погоджуюсь з обробкою песональних даних</label>
                             
                         </fieldset>
                     <form action="#" method="get">
@@ -109,32 +110,40 @@
                                 <div class="columm1">
                                     <ul>
                                         <li>
-                                            <input type="checkbox" value="">HTML
+                                            <input type="checkbox" value="HTML" id="HTML">
+                                            <label for="HTML">HTML</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" value="">CSS
+                                            <input type="checkbox" value="CSS" id="CSS">
+                                            <label for="CSS">CSS</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" value="">JavaScript
+                                            <input type="checkbox" value="JavaScript" id="JavaScript">
+                                            <label for="JavaScript">JavaScript</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" value="">React
+                                            <input type="checkbox" value="React" id="React">
+                                            <label for="React">React</label>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="columm2">
                                     <ul>
                                         <li>
-                                            <input type="checkbox" value="">TypeScript
+                                            <input type="checkbox" value="TypeScript" id="TypeScript">
+                                            <label for="TypeScript">TypeScript</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" value="">NodeJS
+                                            <input type="checkbox" value="NodeJS" id="NodeJS">
+                                            <label for="NodeJS">NodeJS</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" value="">PHP
+                                            <input type="checkbox" value="PHP" id="PHP">
+                                            <label for="PHP">PHP</label>
                                         </li>
                                         <li>
-                                            <input type="checkbox" value="">Lavarel
+                                            <input type="checkbox" value="Lavarel" id="Lavarel">
+                                            <label for="Lavarel">Lavarel</label>
                                         </li>
                                     </ul>
                                 </div>

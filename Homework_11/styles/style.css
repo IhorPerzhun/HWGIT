@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #C9C9C9;
+}
+
+.container_header{
+    max-width: 1200px;
+    height: 54px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 13px 120px 90px;
+    align-items: center;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 83px 120px 90px;
+}
+
+
+
+ul{
+    display: flex;
+
+}
+
+li{
+    list-style-type: none;
+    align-items: center;
+}
+
+
+
+.underline{
+    text-decoration: underline;
+}
+
+.background_gray{
+    background-color: #C9C9C9;
+}
+
+p, h2{
+    color: #000000;
+    padding-bottom: 40px;
+}
+
+h2{
+    font-family:'Francois One';
+    font-size: 36px;
+    line-height: 48px;
+    text-transform: uppercase;
+    
+}
+
+sup{
+    font-family: 'Farro';
+    font-size: 20px
+    
+}
+
+p{
+    font-family: 'PT Sans';
+    font-size: 28px;
+    line-height: 48px;
+}
+
+.lang{
+    font-family: 'Tourney n';
+    font-size: 22px;
+    padding-right: 30px;
+    padding-left: 0;
+}
+
+.logo{
+    margin-right: 0px ;
+    margin-left: auto;
+    width: 238px;
+    height: 54px;
+   
+}
+
+.nav{
+    font-family: 'Staatliches';
+    font-size: 22px;
+    text-transform: uppercase;
+}
+

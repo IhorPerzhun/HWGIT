@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #C9C9C9;
+    height: 100%;
+    
+}
+
+
+.container_header{
+    max-width: 1200px;
+    height: 54px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 13px 120px 90px;
+    align-items: center;
+    position: sticky;
+    
+    
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 83px 120px 90px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.side_bar{
+    position: sticky;
+    top: 80px;
+
+}
+
+.side_bar ul{
+    display: block;
+    max-width: 365px;
+    margin-right: 30px;
+}
+
+.side_bar li{
+    width: 365px;
+    font-family:'Francois One';
+    font-size: 36px;
+    line-height: 48px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #BDBDBD;
+    margin-bottom: 70px;
+
+}
+
+.side_bar a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.container_header ul{
+    display: flex;
+    position: sticky;
+    
+
+}
+
+li{
+    list-style-type: none;
+    align-items: center;
+    
+}
+
+#introduction{
+    z-index: 1;
+}
+
+#bg-picture{
+    background-image: url("../images/bg-picture.svg");
+    background-repeat: no-repeat;
+    width: 760px;
+    height: 760px;
+    position: fixed;
+    left: auto;
+}
+
+
+
+.underline{
+    text-decoration: underline;
+}
+
+.background_gray{
+    background-color: #C9C9C9;
+}
+
+p, h2{
+    color: #000000;
+    margin-bottom: 40px;
+    
+}
+
+h2{
+    font-family:'Francois One';
+    font-size: 36px;
+    line-height: 48px;
+    text-transform: uppercase;
+    
+}
+
+sup{
+    font-family: 'Farro';
+    font-size: 20px
+    
+}
+
+p{
+    font-family: 'PT Sans';
+    font-size: 28px;
+    line-height: 48px;
+}
+
+b{
+    font-family: 'PT Sans bold'
+}
+
+.lang{
+    font-family: 'Tourney n';
+    font-size: 22px;
+    padding-right: 30px;
+    padding-left: 0;
+}
+
+.logo{
+    margin-right: 0px ;
+    margin-left: auto;
+    width: 238px;
+    height: 54px;
+   
+}
+
+.nav{
+    font-family: 'Staatliches';
+    font-size: 22px;
+    text-transform: uppercase;
+}
+

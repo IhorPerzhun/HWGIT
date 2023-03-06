@@ -26,6 +26,8 @@ label{
     font-size: 15px;
     line-height: 22px;
     padding-bottom: 7px;
+    cursor: pointer;
+    margin-right: 21px;
 }
 
 a{
@@ -54,7 +56,7 @@ h1{
 .full_name{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-bottom: 20px;
 }
 
@@ -64,6 +66,7 @@ h1{
     height: 38px;
     border-color: var(--form-color-border);
     border-radius: 6px;
+    outline: 0 none;
 }
 
 .first_name input:active{
@@ -76,6 +79,7 @@ h1{
     height: 38px;
     border-radius: 6px;
     border-color: var(--form-color-border);
+    outline: 0 none;
 }
 
 .email{
@@ -88,6 +92,7 @@ h1{
     border-radius: 6px;
     border-color: var(--form-color-border);
     margin-bottom: 7px;
+    outline: 0 none;
     
 }
 
@@ -100,18 +105,78 @@ h1{
     
 }
 
-.gender{
-    margin-bottom: 20px;
+.gender_select{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
-.gender_male{
-    padding-right: 21px;
+.gender{
+    margin-bottom: 20px;
+    display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
+
+.gender input{
+    position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.custom_radio{
+    position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.gender:hover input ~ .custom_radio {
+    background-color: #ccc;
+  }
+  
+  .gender input:checked ~ .custom_radio {
+    background-color: #2196F3;
+  }
+  
+  .custom_radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .gender input:checked ~ .custom_radio:after {
+    display: block;
+  }
+  
+  .gender .custom_radio:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+  }
+
+
+
 
 .address{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-bottom: 20px;
 }
 
@@ -121,6 +186,7 @@ h1{
     height: 38px;
     border-radius: 6px;
     border-color: var(--form-color-border);
+    outline: 0 none;
     
 }
 
@@ -130,6 +196,7 @@ h1{
     height: 38px;
     border-radius: 6px;
     border-color: var(--form-color-border);
+    outline: 0 none;
 }
 
 .button_submit{
@@ -208,7 +275,10 @@ button{
     max-width: 138;
     height: 30px;
     border: 1px solid var(--form-color-border);
+    outline: 0 none;   
 }
+
+
 
 .file .hint{
     font-family: 'Roboto';
@@ -218,7 +288,8 @@ button{
     letter-spacing: -0.1px;
 }
 
-.button_load button{
+
+.button_del button{
     width: 30px;
     height: 30px;
     background:none;
@@ -228,13 +299,61 @@ button{
 .data_field{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-bottom: 20px;
+}
+
+.name input{
+    width: 100%;
+    max-width: 245px;
+    height: 38px;
+    border-color: var(--form-color-border);
+    border-radius: 6px;
+    outline: 0 none;
+}
+
+.name{
+    margin-bottom: 20px;
+}
+
+.city{
+    margin-bottom: 20px;
+
+}
+
+.country_select{
+    margin-bottom: 20px;
+}
+
+.zip_code input{
+    width: 100%;
+    max-width: 245px;
+    height: 38px;
+    border-color: var(--form-color-border);
+    border-radius: 6px;
+    outline: 0 none;
+}
+
+
+.phone_number input{
+    width: 100%;
+    max-width: 245px;
+    height: 38px;
+    border-color: var(--form-color-border);
+    border-radius: 6px;
+    outline: 0 none;
 }
 
 
 
+.button_update button{
+    max-width: 138px;
+    height: 38px;
+}
 
+input:focus:not([type=checkbox], [type=radio]){
+    border: 2px solid var(--form-color-border_hover);
+}
 
 
     

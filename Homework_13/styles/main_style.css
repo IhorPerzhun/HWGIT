@@ -1,0 +1,247 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --form-color-h1: #1C1C1C;
+    --form-color-label: #545454; 
+    --form-color-small_text: #969696;
+    --form-color-border: #E4E4E4;
+    --form-color-border_hover: #007BFF;
+    --form-color-button_background: #007BFF;
+    --form-color-button_text: #FFFFFF;
+
+}
+
+body{
+    background: #E5E5E5;
+}
+
+label{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    padding-bottom: 7px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--form-color-border_hover);
+}
+
+.container{
+    max-width: 570px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 34px;
+    background: #FFFFFF;
+    margin-top: 55px;
+}
+
+h1{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 20px;
+    
+}
+
+.full_name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.first_name input{
+    width: 100%;
+    max-width: 245px;
+    height: 38px;
+    border-color: var(--form-color-border);
+    border-radius: 6px;
+}
+
+.first_name input:active{
+    border: 2px solid var(--form-color-border_hover);
+    
+}
+.last_name input{
+    width: 100%;
+    max-width: 245px;
+    height: 38px;
+    border-radius: 6px;
+    border-color: var(--form-color-border);
+}
+
+.email{
+    margin-bottom: 20px;
+}
+
+.email input{
+    width: 100%;
+    height: 38px;
+    border-radius: 6px;
+    border-color: var(--form-color-border);
+    margin-bottom: 7px;
+    
+}
+
+.email_hint{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    
+}
+
+.gender{
+    margin-bottom: 20px;
+}
+
+.gender_male{
+    padding-right: 21px;
+}
+
+.address{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.country_select select{
+    width: 100%;
+    max-width: 245px;
+    height: 38px;
+    border-radius: 6px;
+    border-color: var(--form-color-border);
+    
+}
+
+.city input{
+    width: 100%;
+    max-width: 245px;
+    height: 38px;
+    border-radius: 6px;
+    border-color: var(--form-color-border);
+}
+
+.button_submit{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 22px;
+}
+
+button{
+    border: none;
+    width: 100%;
+    height: 38px;
+    border-radius: 6px;
+    background-color: var(--form-color-button_background);
+}
+
+.button_text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: var(--form-color-button_text);
+}
+
+.privacy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.privacy a{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.line{
+    border-bottom: 1px solid var(--form-color-border);
+}
+.log_in{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.log_link a{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: var(--form-color-button_background);
+}
+
+.profile_image{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.image img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.file input{
+    width: 100%;
+    max-width: 138;
+    height: 30px;
+    border: 1px solid var(--form-color-border);
+}
+
+.file .hint{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+}
+
+.button_load button{
+    width: 30px;
+    height: 30px;
+    background:none;
+    border: 1px solid var(--form-color-border);
+}
+
+.data_field{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+    
+
+
+
+
+
+
+

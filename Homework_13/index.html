@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main_style.css">
+    <link rel="fonts" href="styles/fontstyle.css">
+    <title>Creat an Acount</title>
+</head>
+<body>
+   <div class="container">
+    <div class="title">
+        <h1>Create an Account</h1>
+    </div>
+    <form action="#" method="post">
+        <div class="full_name">
+            <div class="fn">
+                <label for="first_name">First Name</label>
+                <div class="first_name">
+                    <input type="name" name="first_name" id="first_name" placeholder=" Enter First Name" required>
+                </div>
+            </div>
+            <br><br>
+            <div class="ln">
+                 <label for="last_name">First Name</label>
+                <div class="last_name">
+                    <input type="name" name="last_name" id="last_name"  placeholder=" Enter Last Name" required>
+                </div>
+            </div>
+            <br><br>
+        </div>
+        
+        <label for="email">E-mail</label>
+        <div class="email">
+            <input type="email" name="email" id="email" placeholder="   Enter your E-mail" required>
+            <span class="email_hint">We'll never share your email with anyone else.</span>
+        </div>
+
+        <div class="gender">
+            <input type="radio" name="gender" id="gender_male" value="gender_male" checked>
+            <label for="gender_male">Male</label>
+            <input type="radio" name="gender" id="gender_female" value="gender_female">
+            <label for="gender_female">Female</label>
+        </div>
+
+        <div class="address">
+            <div class="country">
+                <label for="country">Country</label>
+                <div class="country_select">
+                    <select name="country" id="country" required>
+                        <option value="">Select</option>
+                        <option value="Great Britian">Great Britian</option>
+                        <option value="Germany">Germany</option>
+                        <option value="France">France</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Spain">Spain</option>
+                        <option value="Ukraine">Ukraine</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="city">
+                <label for="city">City</label>
+                <div class="city_input">
+                    <input type="text" placeholder="  Enter City" required> 
+                </div>
+            </div>
+        </div>
+
+        <div class="button_submit">
+            <button type="submit"><span class="button_text">Sign Up</span></button>
+        </div>
+
+        <div class="privacy">
+            <div class="hint">
+                By clicking the 'Sign Up' button, you confirm that you accept our <br>
+            </div>
+            <div class="privacy_link">
+                <a href="#">Terms of Use</a> and <a href="#">Privacy Police</a>
+            </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="log_in">
+            <div class="log_question">
+                <p>Have an account?</p>
+            </div>
+            <div class="log_link">
+                <a href="#">Log In</a>
+            </div>
+        </div>
+
+        <div class="profile">
+            <a href="profile.html" target="_blank">Go to profile</a>
+        </div>
+
+        
+
+    </form>
+   </div>
+</body>
+</html>

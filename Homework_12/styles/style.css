@@ -6,10 +6,7 @@
 
 body{
     background-color: #C9C9C9;
-    height: 100%;
-    
 }
-
 
 .container_header{
     max-width: 1200px;
@@ -19,8 +16,7 @@ body{
     padding: 13px 120px 90px;
     align-items: center;
     position: sticky;
-    
-    
+   
 }
 
 .container{

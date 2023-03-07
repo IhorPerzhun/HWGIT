@@ -27,7 +27,7 @@ label{
     line-height: 22px;
     padding-bottom: 7px;
     cursor: pointer;
-    margin-right: 21px;
+    
 }
 
 a{
@@ -36,7 +36,7 @@ a{
 }
 
 .container{
-    max-width: 570px;
+    max-width: 500px;
     width: 90%;
     margin: 0 auto;
     padding: 34px;
@@ -55,18 +55,35 @@ h1{
 
 .full_name{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 20px;
+}
+
+.fn{
+    width: 100%;
+    margin-right: 12px;
+}
+
+.ln{
+    width: 100%;
+}
+
+.country{
+    width: 100%;
+    margin-right: 12px;
+}
+
+.city{
+    width: 100%;
 }
 
 .first_name input{
     width: 100%;
-    max-width: 245px;
     height: 38px;
     border-color: var(--form-color-border);
     border-radius: 6px;
-    outline: 0 none;
+    outline: none;
 }
 
 .first_name input:active{
@@ -75,7 +92,6 @@ h1{
 }
 .last_name input{
     width: 100%;
-    max-width: 245px;
     height: 38px;
     border-radius: 6px;
     border-color: var(--form-color-border);
@@ -109,6 +125,10 @@ h1{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+}
+
+.gender label{
+    margin-right: 20px;
 }
 
 .gender{
@@ -175,28 +195,26 @@ h1{
 
 .address{
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-evenly;
     margin-bottom: 20px;
 }
 
 .country_select select{
     width: 100%;
-    max-width: 245px;
     height: 38px;
     border-radius: 6px;
     border-color: var(--form-color-border);
-    outline: 0 none;
+    outline: none;
     
 }
 
 .city input{
     width: 100%;
-    max-width: 245px;
     height: 38px;
     border-radius: 6px;
     border-color: var(--form-color-border);
-    outline: 0 none;
+    outline: none;
 }
 
 .button_submit{
@@ -258,9 +276,11 @@ button{
 
 .profile_image{
     display: flex;
+    max-width: 278px;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 20px;
+   
 }
 
 .image img{
@@ -275,7 +295,8 @@ button{
     max-width: 138;
     height: 30px;
     border: 1px solid var(--form-color-border);
-    outline: 0 none;   
+    outline: 0 none; 
+    border-radius: 6px;  
 }
 
 
@@ -288,20 +309,38 @@ button{
     letter-spacing: -0.1px;
 }
 
+.file{
+    margin-top: 10px;
+}
 
 .button_del button{
     width: 30px;
     height: 30px;
     background:none;
     border: 1px solid var(--form-color-border);
+    margin-left: 8px;
+    margin-top: 10px;
+    box-shadow: 1px 1px 0 0;
 }
 
 .data_field{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
 }
+
+.right{
+    width: 100%;
+}
+.left{
+    width: 100%;
+    margin-right: 12px;
+}
+
+
+
+
 
 .name input{
     width: 100%;

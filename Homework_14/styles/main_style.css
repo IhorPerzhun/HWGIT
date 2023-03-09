@@ -100,12 +100,29 @@ h1{
 
 
 
+.border_icon{
+    border: 1px solid rgba(61, 179, 112, 0.1);
+    border-radius: 16px;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 14px 0;
+    
+   
+}
 
 
 .card:hover{
     border: 1px solid 
     #3DB370;
     
+}
+
+svg{
+    display: inline-block;
+   
+
 }
 
 .c1{
@@ -127,10 +144,32 @@ h1{
     
 }
 
+.c3{
+    fill: #0D0D0D;
+}
 
+.instagram:hover .c3{
+    fill: #3DB370;
+}
 
+.facebook:hover .c3{
+    fill: #3DB370;
+}
 
+.github:hover .c3{
+    fill: #3DB370;
+}
 
+.dribbble:hover .c3{
+    fill: #3DB370;
+}
+
+.twitter:hover .c3{
+    fill: #3DB370;
+}
+.c4{
+    fill: #EFEEF3;
+}
 
 .content{
     display: flex;

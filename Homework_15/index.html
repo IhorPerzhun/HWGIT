@@ -4,42 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="scss/">
+    <link rel="stylesheet" href="index.css">
     <title>Our Team</title>
 </head>
 <body>
     <main>
         <div class="container">
-            <section class="section_header">
-                <p class="subtitle">The geniuses behind our work</p>
-                <h1 class="title">Our team</h1>
-                <div class="divider1"></div>
+            <section class="header">
+                <div class="header__subtitle">The geniuses behind our work</div>
+                <h1 class="header__title">Our team</h1>
+                <div class="header__divider">
+                    <div class="divider__line-l"></div>
+                    <div class="divider__icon"></div>
+                    <div class="divider__line-r"></div>
+                </div>
             </section>
 
-            <section class="section_slider">
-                <div class="left">
-                    <div class="photo">
+            <section class="slider">
+                <div class="slider__left slider-left">
+                    <div class="slider-left__photo">
                         <img src="images/photo.jpg" alt="">
-                        <div class="angle1"></div>
-                        <div class="angle2"></div>
-                        <div class="angle3"></div>
-                        <div class="angle4"></div>
+                        <div class="photo__rect angle1"></div>
+                        <div class="photo__rect angle2"></div>
+                        <div class="photo__rect angle3"></div>
+                        <div class="photo__rect angle4"></div>
                     </div>
                 </div>
-                <div class="right">
-                    <div class="name">Sahariar Kabir</div>
-                    <div class="divider_right1"></div>
-                    <div class="position">Frontend Developer</div>
-                    <div class="social"></div>
-                    <div class="discription">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus dui sit amet ligula efficitur, sit amet lacinia massa dictum. Etiam accumsan felis a nunc facilisis, ut euismod lacus placerat. Praesent rutrum eget massa a convallis. Nam vitae augue malesuada, accumsan mauris ut, consectetur.</p>
-
+                <div class="slider__right slider-right">
+                    <div class="slider-right__name">Sahariar Kabir</div>
+                    <div class="slider-right__divider1"></div>
+                    <div class="slider-right__position">Frontend Developer</div>
+                    <ul class="slider-right__social social">
+                        <li class="social__items">
+                            <a href="#">
+                                <img src="" alt="">
+                            </a>
+                        </li>
+                        <li class="social__items">
+                            <a href="#">
+                                <img src="" alt="">
+                            </a>
+                        </li>
+                        <li class="social__items">
+                            <a href="#">
+                                <img src="" alt="">
+                            </a>
+                        </li>
+                        <li class="social__items">
+                            <a href="#">
+                                <img src="" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="slider-right__discription">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus dui sit amet ligula efficitur, sit amet lacinia massa dictum. Etiam accumsan felis a nunc facilisis, ut euismod lacus placerat. Praesent rutrum eget massa a convallis. Nam vitae augue malesuada, accumsan mauris ut, consectetur.
                     </div>
-                    <div class="divider_right2"></div>
-                    <button class="btn">view profile</button>
-
-                    
-
+                    <div class="slider-right__divider2">
+                        <img src="" alt="dashed line">
+                    </div>
+                    <button class="slider-right__btn">view profile</button>
                 </div>
             </section>
         </div>

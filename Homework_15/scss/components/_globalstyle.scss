@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1170px;
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid red;
+    padding-top: 121px;
+}
+
+$up-discr-text: font-family 'Raleway';
+$title-name: font-family 'Roboto';
+$btn: font-family 'Open Sans';
+
+$c-subtext: #898F8F;
+$c-cold: #FFCC00;
+$c-name-disc-btn: #666666;
+$c-text: #333333; 

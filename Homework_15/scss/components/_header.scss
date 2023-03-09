@@ -1,0 +1,35 @@
+.header{
+    border: 1px solid green;
+    margin: 0 auto;
+
+
+    &__subtitle{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;  
+        text-align: center;
+        color: $c-subtext;
+        margin-bottom: 15px;
+    }
+
+
+    &__title{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 66px;
+        text-align: center;
+        color: $c-cold;
+        margin-bottom: 40px;
+    }
+    &__divider{}
+}
+
+.divider{
+    &__line-l{}
+    &__icon{}
+    &__line-r{}
+}

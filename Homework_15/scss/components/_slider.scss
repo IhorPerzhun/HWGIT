@@ -3,21 +3,40 @@
     flex-direction: row;
     justify-content: space-between;
     max-width: 1030px;
-    border: 1px solid blueviolet;
     margin: 0 auto;
 
 
     &__left{
         max-width: 430px;
+        
     }
+
+    &__middle{
+        width: 1px;
+        height: 560px;
+        border-left : 1px solid #FFCC00;
+        margin: 0 auto;
+        
+    }
+
+    
     &__right{
         max-width: 430px;
     }
 }
 
 .slider-left{
+    &__picture{
+        max-width: 430px;
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
     &__photo{
         position: relative;
+        max-width: 400px;
+        max-height: 400px;
+        margin: 15px;
     }
 }
 
@@ -25,6 +44,7 @@
     &__rect{
         width: 100px;
         height: 100px;
+        border: 1px solid $c-cold;
     }
 }
 
@@ -32,24 +52,32 @@
     position: absolute;
     top: -15px;
     left: -15px;
-    border-top: $c-cold;
-    border-left: $c-cold;
+    border-bottom: $c-cold;
+    border-right: $c-cold;
 }
 
 .angle2{
     position: absolute;
     top: -15px;
-    right: 415px;
-    border-top: $c-cold;
+    left: 315px;
+    border-bottom: $c-cold;
     border-left: $c-cold;
 }
 
 .angle3{
-    
+    position: absolute;
+    top: 315px;
+    right: -15px;
+    border-left: $c-cold;
+    border-top: $c-cold;
 }
 
 .angle4{
-    
+    position: absolute;
+    top: 315px;
+    left: -15px;
+    border-right: $c-cold;
+    border-top: $c-cold;
 }
 
 .slider-right{
@@ -64,8 +92,15 @@
         text-align: center;
         text-transform: capitalize;
         color: $c-name-disc-btn;
+        padding-top: 70px;
+        margin-bottom: 30px;
     }
-    &__divider1{}
+    &__divider1{
+        border-bottom:1px solid $c-cold;
+        max-width: 100px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
 
 
     &__position{
@@ -77,18 +112,92 @@
         text-align: center;
         text-transform: capitalize;
         color: $c-name-disc-btn;
+        margin-bottom: 30px;
     }
-    &__social{}
-    &__discription{}
-    &__divider2{}
-    &__btn{}
-    &__{}
+
+
+    &__social{
+       display: flex;
+       justify-content: center;
+       gap: 5px;
+       margin-bottom: 49px;
+       
+    }
+
+    .social{
+        &__items{
+            list-style-type: none;
+        }
+    }
+
+    &__discription{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        color: $c-name-disc-btn;
+        margin-bottom: 20px;
+
+    }
+    &__divider2{
+        max-width: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        
+    }
+
+    .divider2{
+        &__line1{
+            border-bottom:4px solid $c-cold;
+            width: 10px;
+        }
+        &__line2{
+            border-bottom:4px solid $c-cold;
+            width: 20px;
+        }
+        &__line3{
+            border-bottom:4px solid $c-cold;
+            width: 10px;
+        }
+    }
+
+
+    &__btn{
+        text-align: center;
+    }
+    
+    .btn{
+        &__style{
+            width: 118px;
+            height: 24px;
+            border: 1px solid $c-cold;
+            background-color: #ffffff;
+        }
+    
+        &__text{
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 14px;
+            text-align: center;
+            text-transform: uppercase;
+            color: $c-name-disc-btn;
+        }
+    }
 
 }
 
-.social{
-    &__items{}
-}
+
+
+
+
+
 
 
 

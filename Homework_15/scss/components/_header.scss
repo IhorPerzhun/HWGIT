@@ -1,6 +1,6 @@
 .header{
-    border: 1px solid green;
     margin: 0 auto;
+    margin-bottom: 40px;
 
 
     &__subtitle{
@@ -25,11 +25,25 @@
         color: $c-cold;
         margin-bottom: 40px;
     }
-    &__divider{}
+    &__divider{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 450px;
+        height: 20px;
+        margin: 0 auto;
+        gap: 5px;
+    }
 }
 
 .divider{
-    &__line-l{}
+    &__line-l{
+        width: 210px;
+        border-bottom: 1px solid $c-cold ;
+    }
     &__icon{}
-    &__line-r{}
+    &__line-r{
+        width: 210px;
+        border-bottom: 1px solid $c-cold
+    }
 }

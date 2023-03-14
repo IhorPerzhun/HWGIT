@@ -55,6 +55,7 @@
     
 }
 
+
 .buttons{
     max-width: 252px;
     display: inline-block;
@@ -94,7 +95,7 @@
 }
 
 .btn{
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -103,7 +104,7 @@
 }
 
 .custom{
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -125,7 +126,7 @@
 
 
 .intro__title{
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 44px;
@@ -135,7 +136,7 @@
 }
 
 .intro__text{
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -145,6 +146,7 @@
 }
 
 .intro__button{
+    display: inline-block;
     width: 180px;
     height: 50px;
     background: #FF9900;
@@ -153,7 +155,7 @@
     padding: 13px 40px;
 }
 
-.intro__buttonp:hover{
+.intro__button:hover{
     box-shadow: 1px 1px 1px 1px #d1cece;
 }
 

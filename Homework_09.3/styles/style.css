@@ -248,6 +248,7 @@ h2{
 .benefits{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 100px;
 }
 
 .benefits-left{
@@ -298,4 +299,165 @@ h2{
     margin-bottom: 10px;
 }
 
+.managers{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
 
+.managers__image{
+    max-width: 570px;
+    
+}
+
+.managers__text{
+    max-width: 505px;
+    text-align: left;
+}
+
+.point{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    
+}
+
+.managers-text{
+    margin-top: 40px;
+}
+
+.title-box__sup{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+}
+
+.title-box__title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #2F281E;
+    margin-bottom: 20px;
+}
+
+.title-box__text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+    margin-bottom: 40px;
+}
+
+.point__icon{
+    margin-right: 30px;
+}
+
+.point__text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+    margin-bottom: 30px;
+}
+
+.marketers{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.marketers__text{
+    max-width: 486px;
+    text-align: left;
+}
+
+.marketers__image{
+    max-width: 540px;
+}
+
+.decor_line{
+    border-bottom: 1px solid #BCD0E5;
+    width:100%;
+    max-width: 1440px;
+    opacity: 0.5;
+    margin-bottom: 43px;
+
+}
+
+.footer__data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.footer-data__title{
+    max-width: 200px;
+}
+
+.quick-links .legal-stuff{
+    max-width: 135px;
+    
+}
+
+
+
+.feedback{
+    max-width: 340px;
+}
+
+.link-title{
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2F281E;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.link-item{
+    
+    margin-bottom: 15px;
+    text-align: left;
+    
+}
+
+.link-item a{
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+}
+
+.link-item a:hover{
+    color: #FF9900;
+}
+
+.feedback__title{
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2F281E;
+    margin-bottom: 25px;
+}
+
+input{
+    margin-bottom: 25px;
+}

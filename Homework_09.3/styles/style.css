@@ -88,11 +88,19 @@
 }
 
 .button__sing-in:hover{
-    box-shadow: 1px 1px 1px 1px #e29f39;
+    box-shadow: 0 0 1px 1px #e29f39;
+}
+
+.button__sing-in:active{
+    box-shadow: 1px 1px 0 0 #e29f39;
 }
 
 .button__sing-up:hover{
-    box-shadow: 1px 1px 1px 1px #d1cece;
+    box-shadow: 0 0 1px 1px #d1cece;
+}
+
+.button__sing-up:active{
+    box-shadow: 1px 1px 0 0 #d1cece;
 }
 
 .button__sing-up{
@@ -171,7 +179,11 @@
 }
 
 .intro__button:hover{
-    box-shadow: 1px 1px 1px 1px #d1cece;
+    box-shadow: 0 0 1px 1px #d1cece;
+}
+
+.intro__button:active{
+    box-shadow: 1px 1px 0 0 #d1cece;
 }
 
 .tools__title{
@@ -238,7 +250,16 @@ h2{
     width: 180px;
     height: 50px;
     background: #FF9900;
+    border: none;
     border-radius: 4px;
+}
+
+.btn__sign-nov:hover{
+    box-shadow: 0 0 1px 1px #d1cece;
+}
+
+.btn__sign-nov:active{
+    box-shadow: 1px 1px 0 0 #d1cece;
 }
 
 .tools__button{
@@ -456,8 +477,48 @@ h2{
     line-height: 30px;
     color: #2F281E;
     margin-bottom: 25px;
+    max-width: 280px;
+    text-align: left;
 }
 
 input{
     margin-bottom: 25px;
+    display: none;
+
+}
+
+label{
+    position: relative;
+    margin-bottom: 25px;
+}
+
+label::after{
+    width: 340px; 
+    height: 50px;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    position: absolute;
+    content: '';
+    display: inline-block;
+    left: -140px;
+    top: 0;
+}
+
+label::before .pleceholder{
+    visibility: visible;
+    position: absolute;
+    content: '';
+    display: inline-block;
+    left: -140px;
+    top: 0;
+}
+
+
+.placeholder{
+    visibility: hidden;
+}
+
+.feedback__button{
+    margin-top: 100px;
+    text-align: left;
 }

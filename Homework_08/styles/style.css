@@ -72,6 +72,12 @@
 
 }
 
+.checklist-item:active{
+    background-color: #FF8984;
+    
+
+}
+
 
 
 
@@ -145,10 +151,7 @@ input{
    
     
 }
-label:checked label{
-    text-decoration: line-through;
-    
-}
+
 
 
 .text_dec{
@@ -192,6 +195,10 @@ label:checked label{
 
 .btn__submit:hover{
     box-shadow: 0 0 5px 0 #FF8984;
+}
+
+.btn__submit:active{
+    box-shadow: 0 0 5px 5px #FF8984;
 }
 
 * {

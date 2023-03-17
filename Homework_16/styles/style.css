@@ -20,34 +20,7 @@
 
 
 
-/* responsive */
-@media screen and (max-width: 990px){
-    .container{
-        max-width: 1060px;
-        padding: 0 35px;
-    }
-    .nav{
-    max-width: 450px;
-    }
-}
 
-@media screen and (max-width: 768px){
-    .container{
-        max-width: 720px;
-        padding: 0 10px;
-    }
-}
-
-@media screen and (max-width: 320px){
-    .container{
-        max-width: 320px;
-        padding: 0 10px;
-    }
-}
-
-
-
-/* responsive */
 
 
 
@@ -170,18 +143,24 @@
 .content{
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .content__left{
     display: inline-block;
     width: 100%;
-    max-width: 500px;
+    
 }
 
 .content__right{
     display: inline-block;
     width: 100%;
+    
+}
+
+.intro__img img{ 
     max-width: 644px;
+    width: 100%;
 }
 
 
@@ -253,10 +232,11 @@ h2{
     display: flex;
     justify-content: space-between;
     margin-bottom: 70px;
+    gap: 20px;
 }
 
 .card{
-    max-width: 270px;
+    
     width: 100%;
     text-align: left;
 }
@@ -312,11 +292,17 @@ h2{
 }
 
 .benefits-left{
-    max-width: 525px;
+    
     text-align: left;
+    width: 100%;
 }
 
 .benefits-right{
+    
+    width: 100%;
+}
+
+.benefits-right img{
     max-width: 525px;
 }
 
@@ -368,11 +354,12 @@ h2{
 
 .managers__image{
     max-width: 570px;
+    width: 100%;
     
 }
 
 .managers__text{
-    max-width: 505px;
+    width: 100%;;
     text-align: left;
 }
 
@@ -380,7 +367,7 @@ h2{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-bottom: 30px;
+   
     
 }
 
@@ -439,7 +426,7 @@ h2{
 }
 
 .marketers__text{
-    max-width: 486px;
+    width: 100%;
     text-align: left;
 }
 
@@ -534,7 +521,7 @@ label{
 }
 
 label::after{
-    width: 340px; 
+    width: 260px; 
     height: 50px;
     border: 1px solid #BCD0E5;
     border-radius: 4px;
@@ -563,4 +550,289 @@ label::before .pleceholder{
     margin-top: 100px;
     text-align: left;
 }
+
+
+
+/* responsive */
+@media screen and (max-width: 990px){
+    .container{
+        max-width: 1060px;
+        padding: 0 35px;
+    }
+    
+   
+    .tools__cards{
+        gap: 20px;
+    }
+
+    .button__sing-in{
+        width: 100px;
+    }
+
+    .button__sing-up{
+        width: 100px;
+    }
+
+    .nav__items{
+        flex-wrap: wrap;
+        width: 600px;
+    }
+
+    .intro__title{
+        font-size: 36px;
+    }
+
+    .benefits-right img{
+        width: 100%;
+    }
+
+    .managers__image img{
+        width: 100%;
+    }
+
+    .managers-text{
+        width: 100%;
+    }
+
+    .marketers__image img{
+        width: 100%;
+    }
+
+    .marketers__text{
+        width: 100%;
+    }
+
+    .tools__title h2{
+        font-size: 30px;
+    }
+
+    .card__title{
+        font-size: 20px;
+    }
+
+    .benefits-left__title{
+        font-size: 30px;
+    }
+
+    .title-box__title{
+        font-size: 30px;
+    }
+
+    .benefits-right{
+        margin-top: 80px;
+    }
+
+    .managers__image{
+        margin-top: 80px;
+    }
+
+    .marketers__image{
+        margin-top: 54px;
+    }
+
+   
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        max-width: 720px;
+        padding: 0 10px;
+    }
+
+    .header{
+        height: 100%;
+    }
+
+    .content_header{
+        flex-direction: column;
+    }
+
+    .nav__items{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav__item{
+        width: 100%;
+    }
+
+    .nav__item a{
+        font-size: 22px;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+
+    .tools__title{
+        width: 100%;
+    }
+
+    .tools__cards{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card{
+        border: 1px solid rgb(175, 175, 175, 0.5);
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    .card:hover{
+        box-shadow:0 0 0 1px #e29f39;
+    }
+
+    .gradient_box{
+        margin-bottom: 20px;
+        border-radius: 0 0 40% 40%;
+    }
+
+    .card__title{
+        text-align: center;
+    }
+
+    .card__text{
+        text-align: center;
+    }
+
+    .benefits{
+        flex-direction: column-reverse;
+        margin-bottom: 20px;
+    }
+
+    .managers{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .marketers{
+        flex-direction: column-reverse;
+        margin-bottom: 30px;
+    }
+
+    /* .footer-data__legal-stuff .link-title{
+        text-align: right;
+    }
+
+    .footer-data__legal-stuff .link-item{
+        text-align: right;
+    } */
+
+    .footer__data{
+        flex-direction: column;
+    }
+
+    .footer-data__title{
+        margin-bottom: 10px;
+    }
+
+    .footer-data__quick-links{
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .container{
+        max-width: 320px;
+        padding: 0 10px;
+    }
+
+    .header{
+        height: 100%;
+    }
+
+    .content_header{
+        flex-direction: column;
+    }
+
+    .nav__items{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav__item{
+        width: 100%;
+    }
+
+    .nav__item a{
+        font-size: 22px;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+
+    .tools__title{
+        width: 100%;
+    }
+
+    .tools__cards{
+        flex-direction: column;
+    }
+
+    .card{
+        border: 1px solid rgb(175, 175, 175, 0.5);
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    .card:hover{
+        box-shadow:0 0 0 1px #e29f39;
+    }
+
+    .gradient_box{
+        margin-bottom: 20px;
+        border-radius: 0 0 40% 40%;
+    }
+
+    .card__title{
+        text-align: center;
+    }
+
+    .card__text{
+        text-align: center;
+    }
+
+    .benefits{
+        flex-direction: column-reverse;
+        margin-bottom: 20px;
+    }
+
+    .managers{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .marketers{
+        flex-direction: column-reverse;
+        margin-bottom: 30px;
+    }
+
+    /* .footer-data__legal-stuff .link-title{
+        text-align: right;
+    }
+
+    .footer-data__legal-stuff .link-item{
+        text-align: right;
+    } */
+
+    .footer__data{
+        flex-direction: column;
+    }
+
+    .footer-data__title{
+        margin-bottom: 10px;
+    }
+
+    .footer-data__quick-links{
+        margin-bottom: 10px;
+    }
+
+    
+}
+
+
+
+/* responsive */
 

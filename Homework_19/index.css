@@ -6,7 +6,7 @@
 
 .header {
   height: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .container {
@@ -20,6 +20,10 @@
   width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
+  font-family: "Autour One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .playing-cards {
@@ -53,7 +57,7 @@
   height: 150px;
   border: 1px solid;
   border-radius: 4px;
-  box-shadow: 0 5px 5px 0;
+  box-shadow: 0 3px 3px 0;
   position: relative;
   text-align: center;
   transition: transform 0.8s;
@@ -74,4 +78,13 @@
   background-color: dodgerblue;
   color: white;
   transform: rotateY(180deg);
+}
+
+/* autour-one-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Autour One";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/autour-one-v24-latin-regular.woff2") format("woff2"), url("../fonts/autour-one-v24-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }/*# sourceMappingURL=index.css.map */

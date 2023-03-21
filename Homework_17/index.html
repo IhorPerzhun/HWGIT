@@ -20,10 +20,10 @@
                     </div>
                     <div class="divider"></div>
                     <div class="header__burger">
-                        <button class="burger is-active" id="burger" onclick="toggleMenu()">
-                            <div class="burger__elem"></div>
-                            <div class="burger__elem"></div>
-                            <div class="burger__elem"></div>
+                        <button class="burger" id="burger" onclick="toggleMenu()">
+                            <span class="burger__elem"></span>
+                            <span class="burger__elem"></span>
+                            <span class="burger__elem"></span>
                         </button>
                     </div>
                     
@@ -192,10 +192,10 @@
                 </div>
             </div>
         </section>
+    </main>
+    <div class="decor_line"></div>
 
-        <div class="decor_line"></div>
-
-        <footer class="footer">
+    <footer class="footer">
             <div class="container">
                 <div class="footer__data footer-data">
 
@@ -242,14 +242,15 @@
                     </div>
                 </div>
             </div>
-        </footer>
-
-    </main>
+    </footer>
     <script>
         function toggleMenu() {
             const burger = document.getElementById('burger');
             burger.classlist.toggle('is-active');
         }
     </script>
+
+    
+    
 </body>
 </html>

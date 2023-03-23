@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1170px;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 121px;
+}
+
+
+
+$c-dark-grey-bg: #333333;
+$c-text-color: #FFFFFF;
+$c-button-bg: #5373FD;
+$c-text-placeholder: #999999;
+$c-card-bg: rgba(35, 35, 35, 0.9);
+

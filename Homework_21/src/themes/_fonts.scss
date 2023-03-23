@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./../fonts/Open_Sans/OpenSans-Bold.woff2') format('woff2'),
+        url('./../fonts/Open_Sans/OpenSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('./../fonts/Open_Sans/OpenSans-Regular.woff2') format('woff2'),
+        url('./../fonts/Open_Sans/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('./../fonts/Monrope/Manrope-Regular.woff2') format('woff2'),
+        url('./../fonts/Monrope/Manrope-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

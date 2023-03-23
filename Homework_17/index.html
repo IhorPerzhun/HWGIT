@@ -20,7 +20,7 @@
                     </div>
                     <div class="divider"></div>
                     <div class="header__burger">
-                        <button class="burger" id="burger" onclick="toggleMenu()">
+                        <button class="burger is-active" id="burger" onclick="toggleMenu()">
                             <span class="burger__elem"></span>
                             <span class="burger__elem"></span>
                             <span class="burger__elem"></span>
@@ -246,7 +246,7 @@
     <script>
         function toggleMenu() {
             const burger = document.getElementById('burger');
-            burger.classlist.toggle('is-active');
+            burger.classList.toggle('is-active');
         }
     </script>
 

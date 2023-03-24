@@ -4,12 +4,7 @@
     box-sizing: border-box;
 }
 
-.container{
-    max-width: 1170px;
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 121px;
-}
+
 
 
 
@@ -18,4 +13,27 @@ $c-text-color: #FFFFFF;
 $c-button-bg: #5373FD;
 $c-text-placeholder: #999999;
 $c-card-bg: rgba(35, 35, 35, 0.9);
+
+// $breakpointsValue:
+$breakpoint-xs: 480px;
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1280px;
+$breakpoint-2xl: 1536px;
+
+$breakpoints: (
+    'xs': $breakpoint-xs,
+    'sm': $breakpoint-sm,
+    'md': $breakpoint-md,
+    'lg': $breakpoint-lg,
+    'xl': $breakpoint-xl,
+    '2xl': $breakpoint-2xl
+);
+
+@mixin breakpoint($br: '2xl') {
+    @media screen and (max-width: map-get($breakpoints, $br)) {
+        @content;
+    }
+}
 

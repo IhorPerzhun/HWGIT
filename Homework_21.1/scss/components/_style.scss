@@ -4,7 +4,6 @@
     background-image: url(./../../images/BG-intro-1x.png);
     background-repeat: no-repeat;
     background-size:cover ;
-    &__intro{}
    
 }
 
@@ -134,9 +133,7 @@
         text-align: center;
         
     }
-    &__link{
-        
-    }
+    
 }
 /*header*/
 
@@ -405,13 +402,11 @@
             max-width: 280px;
         }
     }
-    &__items{}
 }
 
-.stepline{
    
     
-}
+
 
 
 
@@ -476,9 +471,6 @@
     padding-bottom: 120px;
     display: flex;
     justify-content: left;
-    &__card{
-        
-    }
 }
 
 .bookbox-card{
@@ -525,9 +517,7 @@
         color: $c-text-color;
         margin-bottom: 24px;
     }
-    &__btn{
-        
-    }
+    
 }
 
 
@@ -570,9 +560,6 @@
     justify-content: right;
     
     
-    &__card{
-        
-    }
 }
 /*booknow1*/
 
@@ -597,7 +584,6 @@
         padding-top: 120px;
         margin-bottom: 60px;
     }
-    &__review{}
 }
 
 .wtsbox-review{
@@ -615,10 +601,6 @@
     &__photo{
         max-width: 440px;
         width: 100%;
-        &__img{
-            
-
-        }
 
         
     }
@@ -712,9 +694,6 @@
     justify-content: space-between;
     padding-bottom: 82px;
 
-    &__item{
-       
-    }
 }
 
 .c-change{

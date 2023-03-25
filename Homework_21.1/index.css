@@ -34,7 +34,7 @@
 }
 /*header*/
 .header {
-  background-image: url(./images/BG-intro-1x.png);
+  background-image: url(/images/BG-intro-1x.png);
   background-repeat: no-repeat;
   background-size: cover;
 }

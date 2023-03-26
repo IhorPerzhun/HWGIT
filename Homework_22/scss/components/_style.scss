@@ -13,6 +13,7 @@
     &__logo{
         margin-bottom: 51px;
         width: 112px;
+        
 
     }
     &__text{
@@ -31,7 +32,7 @@
         max-width: 231px;
         margin-bottom: 21px;
     }
-    &__socials{}
+
     &__copyrights{
         font-size: 15px;
         color: #ffffff;
@@ -52,5 +53,18 @@
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 89px;
-    &__link{}
+    
+
+}
+
+a{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+a:hover img{
+
+    transform: scale(1.3);
+    box-shadow:  .5px .5px 1px 1px #00c7fc;
+    transition: all .4s;
 }

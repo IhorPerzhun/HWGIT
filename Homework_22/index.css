@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("./../../fonts/OpenSans-SemiBold.woff2") format("woff2"), url("./../../fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("./../../fonts/OpenSans-Regular.woff2") format("woff2"), url("./../../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.footer {
+  background-color: #121116;
+}
+
+.footer-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 38px;
+}
+.footer-data__logo {
+  margin-bottom: 51px;
+  width: 112px;
+}
+.footer-data__text {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Open Sans";
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.footer-data__divider {
+  border-bottom: 2px solid #ffffff;
+  width: 100%;
+  max-width: 231px;
+  margin-bottom: 21px;
+}
+.footer-data__copyrights {
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Open Sans";
+}
+
+.colortext {
+  color: #00c7fc;
+}
+
+.social-links {
+  max-width: 231px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 89px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+}
+@media screen and (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .container {
+    max-width: 992px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}/*# sourceMappingURL=index.css.map */

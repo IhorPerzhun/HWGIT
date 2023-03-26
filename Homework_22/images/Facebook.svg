@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 15" width="7" height="15">
+	<title>Facebook</title>
+	<defs>
+		<image  width="7" height="15" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAPCAMAAAAf3yWMAAAAAXNSR0IB2cksfwAAADZQTFRF////////////////////////////////////////////////////////////////////////AToNIAAAABJ0Uk5TACCv3//A4EDwgGAwb88/cNAQqpxx7gAAADxJREFUeJyNy0kOgDAMBMEBOjhgsv3/s5EjwZlTSbNI2vaDJOmE0CBf9zJSf6BUV4LVv3qDbv7tfjssXhNvyAHMXXvIfQAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Facebook" style="mix-blend-mode: luminosity" href="#img1" x="0" y="0"/>
+</svg>

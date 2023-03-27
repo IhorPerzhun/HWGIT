@@ -1,0 +1,148 @@
+.cards{
+    background-color: #9789F9;
+    height: 100vh;
+    padding-top: 151px;
+    
+}
+.cardbox{
+    min-height: 611px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card{
+    max-width: 370px;
+    width: 100%;
+    
+    background-color: $c-gray-bg;
+    position: relative;
+    &:hover{
+        
+        
+        
+        .button-order{
+            background-color: $c-button-bg-hover;
+            transition: all .3s;
+            transform: translateY(-60px);
+        }
+    }
+    
+    
+    
+}
+
+.heading{
+    padding-top: 40px;
+    padding-bottom: 30px;
+    &__price{
+        text-align: center;
+        margin-bottom: 24px;
+        
+        
+    }
+    &__title{
+        font-family: 'Bebas Neue Book';
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #000000;
+
+    }
+}
+
+.currency{
+    font-family: 'Bebas Neue Thin';
+    font-size: 24px;
+    line-height: 28px;
+    color: #181818;
+    top: 0;
+}
+.quantity{
+    font-family: 'Bebas Neue Thin';
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 0.08em;
+    color: #000000;
+}
+.pcs{
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.08em;
+    color: #000000;         
+}
+
+.services-box{
+    background-image: url('./images/bg-service.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 370px;
+    
+    
+}
+
+
+
+
+
+
+.services{
+    max-width: 150px;
+    width: 100%;
+    margin: 0 auto;
+    
+
+    &__icon{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+
+.services-list{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 60px;
+
+
+
+}    
+    &__item{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.04em;
+        color: #000000;
+    }
+
+
+
+}
+
+.button-order{
+    width: 200px;
+    height: 54px;
+    border-radius: 30px;
+    background-color: $c-button-bg;
+    border: none;
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: absolute;
+    top: 585px;
+    left: 85px;
+}

@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* bebas-neue-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/bebas-neue-v9-latin-regular.woff2") format("woff2"), url("./fonts/bebas-neue-v9-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-300italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 300;
+  src: url("./fonts/roboto-v30-latin-300italic.woff2") format("woff2"), url("./fonts/roboto-v30-latin-300italic.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/roboto-v30-latin-regular.woff2") format("woff2"), url("./fonts/roboto-v30-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("./fonts/BebasNeue-Thin.woff2") format("woff2"), url("./fonts/BebasNeue-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bebas Neue Book";
+  src: url("./fonts/BebasNeueBook.woff2") format("woff2"), url("./fonts/BebasNeueBook.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.cards {
+  background-color: #9789F9;
+  height: 100vh;
+  padding-top: 151px;
+}
+
+.cardbox {
+  min-height: 611px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card {
+  max-width: 370px;
+  width: 100%;
+  background-color: #F5F3F9;
+  position: relative;
+}
+.card:hover .button-order {
+  background-color: #FD8D7B;
+  transition: all 0.3s;
+  transform: translateY(-60px);
+}
+
+.heading {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.heading__price {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.heading__title {
+  font-family: "Bebas Neue Book";
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+
+.currency {
+  font-family: "Bebas Neue Thin";
+  font-size: 24px;
+  line-height: 28px;
+  color: #181818;
+  top: 0;
+}
+
+.quantity {
+  font-family: "Bebas Neue Thin";
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: 0.08em;
+  color: #000000;
+}
+
+.pcs {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.08em;
+  color: #000000;
+}
+
+.services-box {
+  background-image: url("./images/bg-service.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 370px;
+}
+
+.services {
+  max-width: 150px;
+  width: 100%;
+  margin: 0 auto;
+}
+.services__icon {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.services .services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 60px;
+}
+.services__item {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+
+.button-order {
+  width: 200px;
+  height: 54px;
+  border-radius: 30px;
+  background-color: #6FCFFB;
+  border: none;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: absolute;
+  top: 585px;
+  left: 85px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+}
+@media screen and (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .container {
+    max-width: 992px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}/*# sourceMappingURL=index.css.map */

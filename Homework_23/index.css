@@ -42,109 +42,95 @@
   font-style: normal;
   font-display: swap;
 }
-.cards {
-  background-color: #9789F9;
-  height: 100vh;
-  padding-top: 151px;
-}
-
 .cardbox {
-  min-height: 611px;
-  width: 100%;
+  padding: 100px 30px;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #9789f9;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  row-gap: 100px;
+  flex-wrap: wrap;
 }
 
 .card {
   max-width: 370px;
+  min-height: 590px;
   width: 100%;
   background-color: #F5F3F9;
   position: relative;
+  padding-bottom: 57px;
+  transition-duration: 0.6s;
+  z-index: 5;
 }
-.card:hover .button-order {
+.card:hover {
+  transform: scale(1.07);
+  transition-duration: 0.6s;
+  padding-bottom: 87px;
+}
+.card:hover .btn {
+  transform: translateY(-85px);
+  transition-duration: 0.6s;
   background-color: #FD8D7B;
-  transition: all 0.3s;
-  transform: translateY(-60px);
 }
-
-.heading {
+.card:hover .sell {
+  bottom: 30px;
+}
+.card:hover .colorbub {
+  fill: #FD8D7B;
+  transition-duration: 0.6s;
+}
+.card:hover .popular {
+  visibility: visible;
+  transition-duration: 0.6s;
+  z-index: 10;
+}
+.card__bg {
+  background-image: url("./images/bg-service.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-height: 390px;
+}
+.card__price {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   padding-top: 40px;
-  padding-bottom: 30px;
-}
-.heading__price {
-  text-align: center;
   margin-bottom: 24px;
 }
-.heading__title {
+.card__title {
   font-family: "Bebas Neue Book";
   font-size: 24px;
   line-height: 28px;
   text-align: center;
   letter-spacing: 0.04em;
   color: #000000;
+  margin-bottom: 70px;
 }
-
-.currency {
-  font-family: "Bebas Neue Thin";
-  font-size: 24px;
-  line-height: 28px;
-  color: #181818;
-  top: 0;
-}
-
-.quantity {
-  font-family: "Bebas Neue Thin";
-  font-size: 60px;
-  line-height: 60px;
-  letter-spacing: 0.08em;
-  color: #000000;
-}
-
-.pcs {
-  font-family: "Bebas Neue";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 16px;
-  letter-spacing: 0.08em;
-  color: #000000;
-}
-
-.services-box {
-  background-image: url("./images/bg-service.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  max-width: 370px;
-}
-
-.services {
-  max-width: 150px;
-  width: 100%;
-  margin: 0 auto;
-}
-.services__icon {
+.card__icon {
   padding-top: 40px;
-  padding-bottom: 40px;
   text-align: center;
+  margin-bottom: 40px;
 }
-.services .services-list {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  padding-bottom: 60px;
-}
-.services__item {
+.card__discont {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 11px;
+  line-height: 18px;
+  text-align: center;
   letter-spacing: 0.04em;
-  color: #000000;
+  color: #A9A9A9;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 81px);
+  transition-duration: 0.6s;
 }
-
-.button-order {
+.card__btn {
   width: 200px;
   height: 54px;
   border-radius: 30px;
@@ -155,14 +141,81 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
-  text-align: center;
   letter-spacing: 0.04em;
   color: #FFFFFF;
   padding-top: 20px;
   padding-bottom: 20px;
+  transition-duration: 0.6s;
   position: absolute;
-  top: 585px;
-  left: 85px;
+  bottom: -28px;
+  left: calc(50% - 100px);
+}
+
+.price__current {
+  font-family: "Bebas Neue Thin";
+  font-size: 24px;
+  line-height: 28px;
+  color: #181818;
+  align-self: flex-start;
+}
+.price__quantity {
+  font-family: "Bebas Neue Thin";
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: 0.08em;
+  color: #000000;
+}
+.price__pcs {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.08em;
+  color: #000000;
+  align-self: flex-end;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  min-height: 81px;
+  gap: 30px;
+  padding-bottom: 60px;
+}
+.services-list__item {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+
+.bubble {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.colorbub {
+  fill: #6FCFFB;
+  transition-duration: 0.6s;
+}
+
+.colortext {
+  fill: #FFFFFF;
+}
+
+.popular {
+  position: absolute;
+  top: 25px;
+  right: -75px;
+  transition-duration: 0.2s;
+  visibility: hidden;
 }
 
 .container {

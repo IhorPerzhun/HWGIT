@@ -1,46 +1,64 @@
-.cards{
-    background-color: #9789F9;
-    height: 100vh;
-    padding-top: 151px;
-    
-}
+
 .cardbox{
-    min-height: 611px;
-    width: 100%;
+    padding: 100px 30px;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #9789f9;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    column-gap: 60px;
+    row-gap: 100px;
+    flex-wrap: wrap;
 }
 
 .card{
     max-width: 370px;
+    min-height: 590px;
     width: 100%;
-    
     background-color: $c-gray-bg;
     position: relative;
+    padding-bottom: 57px;
+    transition-duration: .6s;
+    z-index: 5;
     &:hover{
-        
-        
-        
-        .button-order{
-            background-color: $c-button-bg-hover;
-            transition: all .3s;
-            transform: translateY(-60px);
+        transform: scale(1.07);
+        transition-duration: .6s;
+        padding-bottom: 87px;
+        .btn{
+            transform: translateY(-85px);
+            transition-duration: .6s;
+            background-color: #FD8D7B;
+        }
+        .sell{
+            bottom: 30px;
+        }
+        .colorbub{
+            fill: #FD8D7B;
+            transition-duration: .6s;
+        }
+        .popular{
+            visibility: visible;
+            transition-duration: .6s;
+            z-index: 10;
         }
     }
-    
-    
-    
-}
 
-.heading{
-    padding-top: 40px;
-    padding-bottom: 30px;
+    &__bg{
+        background-image: url('./images/bg-service.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        max-height: 390px;
+    }
+
     &__price{
-        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 40px;
         margin-bottom: 24px;
-        
-        
+
     }
     &__title{
         font-family: 'Bebas Neue Book';
@@ -49,69 +67,87 @@
         text-align: center;
         letter-spacing: 0.04em;
         color: #000000;
-
+        margin-bottom: 70px;
     }
-}
-
-.currency{
-    font-family: 'Bebas Neue Thin';
-    font-size: 24px;
-    line-height: 28px;
-    color: #181818;
-    top: 0;
-}
-.quantity{
-    font-family: 'Bebas Neue Thin';
-    font-size: 60px;
-    line-height: 60px;
-    letter-spacing: 0.08em;
-    color: #000000;
-}
-.pcs{
-    font-family: 'Bebas Neue';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 16px;
-    letter-spacing: 0.08em;
-    color: #000000;         
-}
-
-.services-box{
-    background-image: url('./images/bg-service.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    max-width: 370px;
-    
-    
-}
-
-
-
-
-
-
-.services{
-    max-width: 150px;
-    width: 100%;
-    margin: 0 auto;
-    
-
     &__icon{
         padding-top: 40px;
-        padding-bottom: 40px;
         text-align: center;
+        margin-bottom: 40px;
     }
+    
+    &__discont{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #A9A9A9;
+        position: absolute;
+        bottom: 0;
+        left: calc(50% - 81px);
+        transition-duration: .6s;
+        
+    }
+    &__btn{
+        width: 200px;
+        height: 54px;
+        border-radius: 30px;
+        background-color: $c-button-bg;
+        border: none;
+        font-family: 'Bebas Neue';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 18px;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        transition-duration: .6s;
+        position: absolute;
+        bottom: -28px;
+        left: calc(50% - 100px);
+    }
+}
+
+.price{
+    &__current{
+        font-family: 'Bebas Neue Thin';
+        font-size: 24px;
+        line-height: 28px;
+        color: #181818;
+        align-self: flex-start;
+    }
+    &__quantity{
+        font-family: 'Bebas Neue Thin';
+        font-size: 60px;
+        line-height: 60px;
+        letter-spacing: 0.08em;
+        color: #000000;
+    }
+    &__pcs{
+        font-family: 'Bebas Neue';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 0.08em;
+        color: #000000; 
+        align-self:flex-end;
+    }
+}
 
 .services-list{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    min-height: 81px;
     gap: 30px;
     padding-bottom: 60px;
 
-
-
-}    
     &__item{
         font-family: 'Roboto';
         font-style: normal;
@@ -121,28 +157,30 @@
         letter-spacing: 0.04em;
         color: #000000;
     }
-
-
-
 }
 
-.button-order{
-    width: 200px;
-    height: 54px;
-    border-radius: 30px;
-    background-color: $c-button-bg;
-    border: none;
-    font-family: 'Bebas Neue';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 18px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: #FFFFFF;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.bubble{
     position: absolute;
-    top: 585px;
-    left: 85px;
+    top: 10px;
+    right: 10px;
 }
+
+.colorbub{
+    fill: $c-button-bg;
+    transition-duration: .6s;
+}
+
+.colortext{
+    fill: #FFFFFF;
+}
+
+.popular{
+    position: absolute;
+    top: 25px;
+    right: -75px;
+    transition-duration: .2s;
+    visibility: hidden;
+}
+
+
+

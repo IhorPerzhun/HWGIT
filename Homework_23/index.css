@@ -150,6 +150,10 @@
   bottom: -28px;
   left: calc(50% - 100px);
 }
+.card__btn:active {
+  box-shadow: 0 0 3px 3px #FD8D7B;
+  transition: 0.1s;
+}
 
 .price__current {
   font-family: "Bebas Neue Thin";

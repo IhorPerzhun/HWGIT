@@ -145,6 +145,10 @@
         position: absolute;
         bottom: -28px;
         left: calc(50% - 100px);
+        &:active{
+            box-shadow: 0 0 3px 3px #FD8D7B;
+            transition: .1s;
+        }
     }
 }
 

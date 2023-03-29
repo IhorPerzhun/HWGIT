@@ -207,6 +207,11 @@
   }
 }
 
+@media screen and (max-width: 992px) {
+  .nav {
+    display: none;
+  }
+}
 .nav__item a {
   font-family: "Aleo";
   font-style: normal;
@@ -220,11 +225,6 @@
 }
 .nav__item a:hover {
   font-weight: bold;
-}
-@media screen and (max-width: 992px) {
-  .nav__item a {
-    visibility: hidden;
-  }
 }
 
 /*burger*/
@@ -252,7 +252,7 @@
   height: 4px;
   background: #FFFFFF;
   transition: all 0.4s;
-  /* visibility: hidden; */
+  visibility: hidden;
   position: absolute;
   left: 0;
   top: calc(50% - 2px);
@@ -337,14 +337,33 @@
     max-width: 550px;
   }
 }
+@media screen and (max-width: 480px) {
+  .whybox__images {
+    width: 100%;
+  }
+}
 
 .image:first-child {
   text-align: left;
   margin-bottom: 16px;
+  width: 100%;
+}
+@media screen and (max-width: 480px) {
+  .image:first-child {
+    width: 100%;
+    max-width: 260px;
+  }
 }
 
 .image:last-child {
   text-align: right;
+  width: 100%;
+}
+@media screen and (max-width: 480px) {
+  .image:last-child {
+    width: 100%;
+    max-width: 260px;
+  }
 }
 
 .whybox-discription {
@@ -538,14 +557,16 @@
   height: 60px;
   background-color: #5373FD;
   border: none;
+  transition: 0.3s;
 }
 .style-btn:hover {
   background-color: #385cff;
   box-shadow: 0 1px 0 0 #FFFFFF;
-  transition: all 0.2s;
+  transition: 0.3s;
 }
 .style-btn:active {
   box-shadow: 0 0 1px 1px #FFFFFF;
+  transition: 0.3s;
 }
 
 .booknow2 {
@@ -690,10 +711,11 @@
 
 .item__link {
   padding: 0 12px;
+  transition: 0.4s;
 }
 .item__link:hover .c-change {
   fill: #5373FD;
-  transition: all 0.2s;
+  transition: 0.4s;
 }
 
 /*footer*/

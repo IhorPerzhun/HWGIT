@@ -2,14 +2,24 @@
 .cardbox{
     padding: 100px 30px;
     width: 100vw;
-    min-height: 100vh;
+    
+    
     background-color: #9789f9;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 60px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 60px;
+       -moz-column-gap: 60px;
+            column-gap: 60px;
     row-gap: 100px;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .card{
@@ -19,15 +29,26 @@
     background-color: $c-gray-bg;
     position: relative;
     padding-bottom: 57px;
-    transition-duration: .6s;
-    z-index: 5;
-    &:hover{
-        transform: scale(1.07);
-        transition-duration: .6s;
-        padding-bottom: 87px;
-        .btn{
-            transform: translateY(-85px);
+    -webkit-transition-duration: .6s;
+         -o-transition-duration: .6s;
             transition-duration: .6s;
+    z-index: 0;
+    &:hover{
+        -webkit-transform: scale(1.07);
+            -ms-transform: scale(1.07);
+                transform: scale(1.07);
+        -webkit-transition-duration: .8s;
+             -o-transition-duration: .8s;
+                transition-duration: .8s;
+        padding-bottom: 87px;
+        z-index: 1;
+        .btn{
+            -webkit-transform: translateY(-85px);
+                -ms-transform: translateY(-85px);
+                    transform: translateY(-85px);
+            -webkit-transition-duration: .6s;
+                 -o-transition-duration: .6s;
+                    transition-duration: .6s;
             background-color: #FD8D7B;
         }
         .sell{
@@ -35,11 +56,15 @@
         }
         .colorbub{
             fill: #FD8D7B;
-            transition-duration: .6s;
+            -webkit-transition-duration: .6s;
+                 -o-transition-duration: .6s;
+                    transition-duration: .6s;
         }
         .popular{
             visibility: visible;
-            transition-duration: .6s;
+            -webkit-transition-duration: .6s;
+                 -o-transition-duration: .6s;
+                    transition-duration: .6s;
             z-index: 10;
         }
     }
@@ -53,9 +78,16 @@
     }
 
     &__price{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         padding-top: 40px;
         margin-bottom: 24px;
 
@@ -87,7 +119,9 @@
         position: absolute;
         bottom: 0;
         left: calc(50% - 81px);
-        transition-duration: .6s;
+        -webkit-transition-duration: .6s;
+             -o-transition-duration: .6s;
+                transition-duration: .6s;
         
     }
     &__btn{
@@ -105,7 +139,9 @@
         color: #FFFFFF;
         padding-top: 20px;
         padding-bottom: 20px;
-        transition-duration: .6s;
+        -webkit-transition-duration: .6s;
+             -o-transition-duration: .6s;
+                transition-duration: .6s;
         position: absolute;
         bottom: -28px;
         left: calc(50% - 100px);
@@ -118,7 +154,8 @@
         font-size: 24px;
         line-height: 28px;
         color: #181818;
-        align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
     }
     &__quantity{
         font-family: 'Bebas Neue Thin';
@@ -135,14 +172,22 @@
         line-height: 16px;
         letter-spacing: 0.08em;
         color: #000000; 
-        align-self:flex-end;
+        -ms-flex-item-align:end; 
+            align-self:flex-end;
     }
 }
 
 .services-list{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     list-style-type: none;
     min-height: 81px;
     gap: 30px;
@@ -167,7 +212,9 @@
 
 .colorbub{
     fill: $c-button-bg;
-    transition-duration: .6s;
+    -webkit-transition-duration: .6s;
+         -o-transition-duration: .6s;
+            transition-duration: .6s;
 }
 
 .colortext{
@@ -178,9 +225,62 @@
     position: absolute;
     top: 25px;
     right: -75px;
-    transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+         -o-transition-duration: .2s;
+            transition-duration: .2s;
     visibility: hidden;
+    -webkit-animation-name: pulse;
+            animation-name: pulse;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
 }
 
+@-webkit-keyframes pulse {
+    from, to {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+    15% {
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+    }
+    30% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+    45% {
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+    }
+    60% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+    from, to {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+    15% {
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+    }
+    30% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+    45% {
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+    }
+    60% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
 
 

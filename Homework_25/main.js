@@ -23,12 +23,12 @@ alert(`Quantity of chokolate: ${quantity.toFixed(0)} pcs \nThe rest of money: ${
 
 //2.2
 const number = prompt('Enter three digit number');
-let hundreds = ((number / 100).toFixed(0));
+let hundreds = (Math.floor(number / 100));
 let hundRest = (number % 100);
-let dozens = ((hundRest / 10).toFixed(0));
+let dozens = (Math.floor(hundRest / 10));
 let dozensRest = (hundRest % 10);
 dozensRestt = String(dozensRest)
-alert (dozensRestt + dozens + hundreds);
+alert(dozensRestt + dozens + hundreds);
 
 //3.1
 const investAmount = prompt('Enter investement amount in $');

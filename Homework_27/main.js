@@ -37,7 +37,6 @@ function getNumb (a, b){
     console.log('1');
   } else {
     console.log('0');
-    (getNumb);
   }
 }
 

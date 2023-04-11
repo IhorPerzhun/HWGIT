@@ -29,13 +29,12 @@ function addDriver(driverName) {
   car.driver.push(driverName);
 }
 addDriver("Vasia");
-console.log(car.driver);
 
 function isDriver(driverName) {
   return car.driver.includes(driverName);
 }
 console.log(isDriver("Vasia"));
-console.log(isDriver("Anton"));
+console.log(isDriver("Valera"));
 
 
 

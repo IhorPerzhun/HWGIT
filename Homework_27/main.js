@@ -89,3 +89,16 @@ let result2 = calcSquare(5, 4);
 console.log(result2);
 let result3 = calcSquare(3);
 console.log(result3);
+
+
+console.log('-------------------------');
+
+const roles = ['name', 'position', 'age'];
+const [p1, p2, p3] = roles;
+console.log(reverse(p3, p2, p1));
+
+
+
+
+
+

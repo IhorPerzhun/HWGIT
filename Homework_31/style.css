@@ -1,15 +1,94 @@
-textarea {
-    width: 100%;
-    height: 200px;
-    font-size: 16px;
-    padding: 10px;
-    box-sizing: border-box;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+h1 {
     text-align: center;
-    color: red;
-    background-color: gainsboro;
 }
-
-#showText{
-    margin-bottom: 50px;
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
-
+input[type="text"] {
+    padding: 5px;
+    margin-right: 10px;
+    width: 50%;
+}
+select {
+    padding: 5px;
+    margin-right: 10px;
+}
+button {
+    padding: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #3E8E41;
+}
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.movie {
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.movie:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.movie img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.movie h3 {
+    text-align: center;
+    margin: 10px;
+}
+.details {
+    display: none;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}
+.details p {
+    margin: 10px;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.pagination button {
+    margin: 0 5px;
+    background-color: #ddd;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.pagination button.active {
+    background-color: #4CAF50;
+    color: white;
+}

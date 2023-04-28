@@ -1,0 +1,730 @@
+.header{
+    background-image: url(./images/BG-intro-1x.png);
+    background-repeat: no-repeat;
+    background-size:cover ;
+   
+}
+
+
+.header-intro{
+    padding-top: 295px;
+    &__title{
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 52px;
+        text-transform: uppercase;
+        color: $c-text-color;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    &__discription{
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: 0.31em;
+        color: $c-text-color;
+        text-align: center;
+        margin-bottom: 48px;
+    }
+
+    &__search{
+        margin-bottom: 211px;
+        width: 100%;
+        height: 60px;
+        border: none;
+        padding-left: 36px;
+
+        @include breakpoint("sm") {
+            padding-left: 20px;
+        }
+        
+        &::placeholder{
+            font-family: 'Josefin Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.2em;
+            color: $c-text-placeholder;
+            max-width: 277px;
+
+            @include breakpoint("sm") {
+                max-width: 200px;
+                font-size: 12px;
+            }
+        }
+        &:focus {
+            outline: none;
+        
+      }
+    }
+    &__scroll{
+        padding-bottom: 120px;
+    }
+}
+
+.formbox{
+    position: relative;
+    margin: 0 auto;
+    max-width:  647px; 
+    width: 100%;
+    
+
+}
+
+.submit-btn{
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    max-width: 140px;
+    width: 100%;
+    height: 52px;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase; 
+    color: $c-text-color; 
+    background-color: $c-button-bg;
+    border: none;
+    &:hover{
+        background-color: #385cff;
+        transition: all .2s;
+    }
+    &:active{
+        box-shadow: 0 0 1px 1px $c-dark-grey-bg;
+        transition: all .2s;
+    }
+    
+}
+
+.search-icon{
+    fill: $c-text-color;
+}
+
+.scroll{
+    &__text{
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.2em;
+        color: $c-text-color;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    &__icon{
+        text-align: center;
+        
+    }
+    
+}
+/*header*/
+
+/*navigation*/
+.navigation{
+    background-color: $c-button-bg;
+}
+
+.navbox{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    @include breakpoint("lg") {
+        position: relative;
+    }
+    
+    &__title{
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $c-text-color;
+        align-items: center;
+    }
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+
+        @include breakpoint("lg") {
+            gap: 20px;
+        }
+        
+    }
+}
+
+.nav{
+    @include breakpoint("lg") {
+        display: none;
+    }
+    
+    &__item a{
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $c-text-color;
+        text-decoration: none;
+        &:hover{
+            font-weight: bold;
+        }
+
+        
+    }
+}
+
+/*burger*/
+
+
+.burger{
+    border: none;
+    background: none;
+    box-shadow: none;
+    width: 46px;
+    height: 30px;
+    position: relative;
+    visibility: hidden;
+    @include breakpoint("lg") {
+        position: absolute;
+        top: 30px;
+        right: 0;
+    }
+}
+
+.burger__elem{
+    border-radius: 2px;
+    margin-bottom: 8px;
+    width: 100% ;
+    height: 4px;
+    background: $c-text-color;
+    transition: all .4s;
+    visibility: hidden; 
+    position: absolute;
+    left: 0;
+    top: calc(50% - 2px);
+
+    @include breakpoint("lg") {
+        visibility: visible;
+    }
+
+}
+
+.burger__elem:first-child{
+    top: 0;
+}
+
+.burger__elem:last-child{
+    top: calc(100% - 4px);
+}
+
+
+/* .is-active */
+
+.is-active .burger__elem{
+    opacity: 0;
+}
+
+.is-active .burger__elem:first-child{
+    opacity: 1;
+    transform: rotate(42deg) translate(10px, 9px);
+}
+
+.is-active .burger__elem:last-child{
+    opacity: 1;
+    transform: rotate(-42deg) translate(10px, -9px);
+}
+
+/* .is-active */
+/*navigation*/
+
+/*why*/
+
+.why{
+    background-image: url(./images/why-bg-1x.png);
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+
+.whybox{
+    padding-top: 124px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 136px;
+    padding-bottom: 124px;
+
+    @include breakpoint("lg") {
+        gap: 30px;
+    }
+
+    @include breakpoint("md") {
+       flex-direction: column-reverse;     
+    }
+
+
+    &__discription{
+        padding-top: 66px;
+
+        @include breakpoint("lg") {
+            padding-top: 80px;
+        }
+
+        @include breakpoint("sm") {
+            text-align: center;
+        }
+
+        
+    }
+    &__images{
+        max-width: 424px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        @include breakpoint("md"){
+            max-width: 550px;
+        }
+
+        @include breakpoint("xs"){
+            width: 100%;
+        }
+
+    }
+}
+.image:first-child{
+    text-align: left;
+    margin-bottom: 16px;
+    width: 100%;
+
+
+    @include breakpoint("xs"){
+        width: 100%;
+        max-width: 260px;
+    }
+
+    
+}
+
+.image:last-child{
+    text-align: right;
+    width: 100%;
+
+    @include breakpoint("xs"){
+        width: 100%;
+        max-width: 260px;
+    }
+
+    
+}
+
+.whybox-discription{
+    max-width: 648px;
+    &__title{
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 40px;
+        text-transform: capitalize;
+        color: $c-text-color;
+        margin-bottom: 24px;
+    }
+    &__text{
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.1em;
+        color: $c-text-color;
+        margin-bottom: 32px;
+    }
+    &__btn{
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: left;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        color: $c-text-color;
+
+        @include breakpoint("sm") {
+            text-align: center;
+        }
+
+    }
+
+}
+/*why*/
+
+/*steps*/
+
+.steps{
+    background-color: $c-dark-grey-bg;
+    &__background-line{
+        text-align: center;
+        padding-top: 60px;
+        max-width: 872px;
+        margin: 0 auto;
+        
+        
+
+        @include breakpoint("2xl") {
+            max-width: 830px;
+        }
+
+        @include breakpoint("xl") {
+            max-width: 600px;
+        }
+
+        @include breakpoint("lg") {
+            max-width: 450px;
+        }
+
+        @include breakpoint("md") {
+            max-width: 350px;
+        }
+
+        @include breakpoint("sm") {
+            max-width: 280px;
+        }
+    }
+}
+
+   
+    
+
+
+
+
+.steps-items{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    &__item{
+        max-width: 424px;
+        width: 100%;
+    }
+}
+
+.item{
+    margin-bottom: 60px;
+
+    &__icon{
+        margin-bottom: 20px;
+
+        
+    }
+    &__text{
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 40px;
+        text-transform: capitalize;
+        color: $c-text-color;
+
+        @include breakpoint("lg") {
+            font-size: 28px;
+        }
+    }
+}
+
+.step-darkblue{
+    fill: $c-button-bg;
+}
+
+.step-red{
+    fill: #FF6363;
+}
+
+.step-blue{
+    fill: #00A2FF;
+}
+
+/*steps*/
+
+/*booknow1*/
+
+.booknow1{
+    background-image: url(./images/booknow1-bg-1x.png);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    
+}
+
+.bookbox1{
+    padding-top: 220px;
+    padding-bottom: 120px;
+    display: flex;
+    justify-content: left;
+}
+
+.bookbox-card{
+    background-color: $c-card-bg;
+    max-width: 648px;
+    width: 100%;
+    padding: 44px 32px;
+
+    @include breakpoint("sm") {
+        text-align: center;
+    }
+    
+    
+    
+
+    &__subtitle{
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0.1em;
+        color: $c-text-color;
+        margin-bottom: 16px;
+    }
+    &__title{
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        text-transform: uppercase;
+        color: $c-text-color;
+        margin-bottom: 16px;
+
+    }
+    &__discription{
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.1em;
+        color: $c-text-color;
+        margin-bottom: 24px;
+    }
+    
+}
+
+
+.style-btn{
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: $c-text-color;
+    width: 213px;
+    height: 60px;
+    background-color: $c-button-bg;
+    border: none;
+    transition: .3s;
+    &:hover{
+        background-color: #385cff;
+        box-shadow: 0 1px 0 0 $c-text-color;
+        transition: .3s;
+    }
+    &:active{
+        box-shadow: 0 0 1px 1px $c-text-color;
+        transition: .3s;
+    }
+    
+}
+
+.booknow2{
+    background-image: url(./images/booknow2-bg-1x.png);
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+
+
+.bookbox2{
+    padding-top: 220px;
+    padding-bottom: 120px;
+    display: flex;
+    justify-content: right;
+    
+    
+}
+/*booknow1*/
+
+/*wts*/
+
+.wts{
+    background-image: url(./images/wts-BG-1x.png);
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+
+.wtsbox{
+    &__title{
+        font-family: 'Aleo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
+        text-transform: capitalize;
+        color: $c-text-color;
+        padding-top: 120px;
+        margin-bottom: 60px;
+    }
+}
+
+.wtsbox-review{
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 180px;
+
+    @include breakpoint("2xl") {
+        align-items: first baseline;
+    }
+
+    @include breakpoint("lg") {
+        flex-direction: column;
+    }
+    &__photo{
+        max-width: 440px;
+        width: 100%;
+
+        
+    }
+    &__text{
+        max-width: 885px;
+        width: 100%;
+        background-color: $c-dark-grey-bg;
+        padding: 48px 65px;
+
+        @include breakpoint("lg") {
+            max-width: 440px;
+        }
+    }
+}
+
+.review{
+    @include breakpoint("xs") {
+        
+        width: 100%;
+    }
+}
+
+.text{
+    &__title{
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        text-transform: uppercase;
+        color: $c-text-color;
+        margin-bottom: 16px;
+
+    }
+    &__discription{
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.1em; 
+        color: $c-text-color;     
+    }
+}
+
+.quotes{
+    fill: $c-button-bg;
+}
+
+/*wts*/
+
+/*footer*/
+
+.footer{
+    background-color: #000000;
+    text-align: center;
+}
+
+.footerbox{
+    &__title{
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $c-text-color;
+        margin-bottom: 8px;
+        padding-top: 80px;
+    }
+    &__discription{
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2em;
+        color: $c-text-color;
+        margin-bottom: 22px;
+    }
+    &__links{
+        margin: 0 auto;
+    }
+}
+
+.footerbox-links{
+    max-width: 275px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 82px;
+
+}
+
+.c-change{
+    fill: $c-text-color;
+    
+}
+
+.item{
+    &__link{
+        padding: 0 12px;
+        transition: .4s;
+        &:hover{
+            .c-change{
+                fill: $c-button-bg;
+                transition: .4s;
+            }
+        }
+    }
+}
+
+
+/*footer*/
+
+
+

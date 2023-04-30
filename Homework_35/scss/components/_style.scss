@@ -2,13 +2,13 @@ html{
     scroll-behavior: smooth;
 }
 header{
-    background-image: url(./../../images/Background_head_blue.png);
+    background-image: url(./images/Background_head_blue.png);
     background-repeat: no-repeat;
     background-size:cover ;
 
 }
 .header_blur{
-    background-image: url(./../../images/background-header.png);
+    background-image: url(./images/background-header.png);
     background-repeat: no-repeat;
     background-size:cover ;
 }
@@ -180,7 +180,7 @@ header{
 }
 
 .projects{
-    background-image: url(./../../images/proj_bg1.png);
+    background-image: url(./images/proj_bg1.png);
     background-position: 0px 274px;
     background-repeat: no-repeat;
     overflow-y: scroll;
@@ -188,7 +188,7 @@ header{
 }
 
 .projects1{
-    background-image: url(./../../images/proj_bg2.png);
+    background-image: url(./images/proj_bg2.png);
     background-position: right 921px;
     background-repeat: no-repeat;
 }
@@ -268,12 +268,12 @@ header{
 }
 
 .news{
-    background-image: url(./../../images/bg-news-blue.png);
+    background-image: url(./images/bg-news-blue.png);
     background-repeat: no-repeat;
     background-size:cover ;
 }
 .news-bg{
-    background-image: url(./../../images/background-news.png);
+    background-image: url(./images/background-news.png);
     background-repeat: no-repeat;
     background-size:cover ;
 }
@@ -506,7 +506,7 @@ input:focus{
 
 //FOOTER
 .footer{
-    background-image: url(./../../images/Background-footer-blue.png);
+    background-image: url(./images/Background-footer-blue.png);
     background-repeat: no-repeat;
     background-size:cover;
     
@@ -514,7 +514,7 @@ input:focus{
 }
 
 .footer-blur{
-    background-image: url(./../../images/Background-footer.png);
+    background-image: url(./images/Background-footer.png);
     background-repeat: no-repeat;
     background-size:cover;
     display: flex;

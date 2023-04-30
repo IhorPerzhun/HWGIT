@@ -14,7 +14,7 @@ a {
   font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 400;
-  src: url("./../../fonts/source-sans-pro-v21-latin-regular.woff2") format("woff2"), url("./../../fonts/source-sans-pro-v21-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("./fonts/source-sans-pro-v21-latin-regular.woff2") format("woff2"), url("./fonts/source-sans-pro-v21-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* montserrat-regular - latin */
 @font-face {
@@ -22,7 +22,7 @@ a {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  src: url("./../../fonts/montserrat-v25-latin-regular.woff2") format("woff2"), url("./../../fonts/montserrat-v25-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("./fonts/montserrat-v25-latin-regular.woff2") format("woff2"), url("./fonts/montserrat-v25-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* montserrat-700 - latin */
 @font-face {
@@ -30,7 +30,7 @@ a {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  src: url("./../../fonts/montserrat-v25-latin-700.woff2") format("woff2"), url("./../../fonts/montserrat-v25-latin-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("./fonts/montserrat-v25-latin-700.woff2") format("woff2"), url("./fonts/montserrat-v25-latin-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* open-sans-regular - latin */
 @font-face {
@@ -38,20 +38,20 @@ a {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("./../../fonts/open-sans-v34-latin-regular.woff2") format("woff2"), url("./../../fonts/open-sans-v34-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("./fonts/open-sans-v34-latin-regular.woff2") format("woff2"), url("./fonts/open-sans-v34-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 html {
   scroll-behavior: smooth;
 }
 
 header {
-  background-image: url(./../../images/Background_head_blue.png);
+  background-image: url(./images/Background_head_blue.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .header_blur {
-  background-image: url(./../../images/background-header.png);
+  background-image: url(./images/background-header.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -202,7 +202,7 @@ header {
 }
 
 .projects {
-  background-image: url(./../../images/proj_bg1.png);
+  background-image: url(./images/proj_bg1.png);
   background-position: 0px 274px;
   background-repeat: no-repeat;
   overflow-y: scroll;
@@ -210,7 +210,7 @@ header {
 }
 
 .projects1 {
-  background-image: url(./../../images/proj_bg2.png);
+  background-image: url(./images/proj_bg2.png);
   background-position: right 921px;
   background-repeat: no-repeat;
 }
@@ -288,13 +288,13 @@ header {
 }
 
 .news {
-  background-image: url(./../../images/bg-news-blue.png);
+  background-image: url(./images/bg-news-blue.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .news-bg {
-  background-image: url(./../../images/background-news.png);
+  background-image: url(./images/background-news.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -507,13 +507,13 @@ input:focus {
 }
 
 .footer {
-  background-image: url(./../../images/Background-footer-blue.png);
+  background-image: url(./images/Background-footer-blue.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .footer-blur {
-  background-image: url(./../../images/Background-footer.png);
+  background-image: url(./images/Background-footer.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;

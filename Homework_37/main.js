@@ -59,21 +59,10 @@ console.log(circle.calcLenght);
 */
 console.log("Завдання №2");
 
+
+
+
 class Marker {
-  constructor(color, inkPercent) {
-    this.color = color
-    this.inkPercent = inkPercent
-  }
-
-
-
-  
-
-
-}
-
-// StationeryToken class
-class StationeryToken {
   constructor(color, inkLevel) {
     this._color = color;
     this._inkLevel = inkLevel;
@@ -103,26 +92,27 @@ class StationeryToken {
   }
 }
 
-// RefillableToken class
-class RefillableToken extends StationeryToken {
+
+
+class RefillableMarker extends Marker {
   refill() {
     this._inkLevel = 100;
   }
 }
 
-const token = new RefillableToken('red', 100);
+const marker = new RefillableMarker('red', 100);
 
-      const printBtn = document.getElementById('draw-btn');
+      const printBtn = document.getElementById('printBtn');
       printBtn.addEventListener('click', () => {
         const text = document.getElementById('text').value;
-        token.drawText(text);
-        document.getElementById('token-output').innerHTML = `Ink level: ${token.inkLevel}%`;
+        marker.drawText(text);
+        document.getElementById('marker-output').innerHTML = `Ink level: ${marker.inkLevel}%`;
       });
 
       const refillBtn = document.getElementById('refill-btn');
       refillBtn.addEventListener('click', () => {
-        token.refill();
-        document.getElementById('token-output').innerHTML = `Ink level: ${token.inkLevel}%`;
+        marker.refill();
+        document.getElementById('marker-output').innerHTML = `Ink level: ${marker.inkLevel}%`;
       });
 
 

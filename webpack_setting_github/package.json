@@ -1,0 +1,44 @@
+{
+    "name": "webpack",
+    "version": "1.0.0",
+    "description": "description",
+    "main": "app.js",
+    "scripts": {
+      "dev": "webpack serve --config configs/webpack.config.dev.js --mode=development",
+      "prod": "webpack --config configs/webpack.config.prod.js --mode=production"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "autoprefixer": "^10.4.14",
+      "babel-loader": "^9.1.2",
+      "clean-webpack-plugin": "^4.0.0",
+      "css-loader": "^6.7.3",
+      "html-loader": "^4.2.0",
+      "html-webpack-plugin": "^5.5.1",
+      "image-minimizer-webpack-plugin": "^3.8.2",
+      "imagemin": "^8.0.1",
+      "mini-css-extract-plugin": "^2.7.5",
+      "postcss-loader": "^7.2.4",
+      "sass": "^1.62.1",
+      "sass-loader": "^13.2.2",
+      "webpack": "^5.81.0",
+      "webpack-merge": "^5.8.0"
+    },
+    "devDependencies": {
+      "css-minimizer-webpack-plugin": "^5.0.0",
+      "imagemin-gifsicle": "^7.0.0",
+      "imagemin-jpegtran": "^7.0.0",
+      "imagemin-mozjpeg": "^10.0.0",
+      "imagemin-optipng": "^8.0.0",
+      "imagemin-pngquant": "^9.0.2",
+      "imagemin-svgo": "^10.0.1",
+      "terser-webpack-plugin": "^5.3.7",
+      "webpack-cli": "^5.0.2",
+      "webpack-dev-server": "^4.13.3"
+    },
+    "browserslist": [
+      "last 2 version",
+      "> 5%"
+    ]
+  }

@@ -1,0 +1,19 @@
+{
+  "name": "webpack_setting",
+  "version": "1.0.0",
+  "description": "description",
+  "main": "app.js",
+  "scripts": {
+    "dev": "webpack serve --config configs/webpack.config.dev.js --mode=development",
+      "prod": "webpack --config configs/webpack.config.prod.js --mode=production"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^5.82.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.0.2",
+    "webpack-dev-server": "^4.13.3"
+  }
+}

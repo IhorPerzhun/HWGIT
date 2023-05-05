@@ -26,7 +26,7 @@ console.log("Завдання №1");
 class User {
   constructor(name, role) {
     if (typeof name !== 'string') {
-      alert('Name must be a string.');
+      alert('Введено не коректно.');
       return;
     }
     if (role !== 'admin' && role !== 'user') {
@@ -35,7 +35,7 @@ class User {
     }
     this.name = name;
     this.role = role;
-    this.isLoggedIn = false;
+    this.isLogIn = false;
   }
 
   getName() {
@@ -51,19 +51,19 @@ class User {
   }
 
   logout() {
-    this.isLoggedIn = false;
+    this.isLogIn = false;
   }
 
   changeName(newName) {
     if (typeof newName !== 'string') {
-      alert('New name must be a string.');
+      alert('Введено не коректно.');
       return;
     }
     this.name = newName;
   }
 
   changePassword(newPassword) {
-    // implementation
+    
   }
 }
 
@@ -75,7 +75,7 @@ class Admin extends User {
 
   addUser(user) {
     if (!(user instanceof User)) {
-      alert('User must be an instance of User.');
+      alert('Користувач повинен бути в User.');
       return;
     }
     this.users.push(user);
@@ -84,7 +84,7 @@ class Admin extends User {
   removeUser(user) {
     const index = this.users.indexOf(user);
     if (index === -1) {
-      alert('User not found.');
+      alert('Користувач не знайдений.');
       return;
     }
     this.users.splice(index, 1);
@@ -92,11 +92,11 @@ class Admin extends User {
 
   changeUserRole(user, newRole) {
     if (!(user instanceof User)) {
-      alert('User must be an instance of User.');
+      alert('Користувач повинен бути в User.');
       return;
     }
     if (newRole !== 'admin' && newRole !== 'user') {
-      alert('Role must be either "admin" or "user".');
+      alert('Роль має бути "admin" або "user".');
       return;
     }
     user.role = newRole;
@@ -111,22 +111,22 @@ class Admin extends User {
   }
 }
 
-const user1 = new User('Petro', 'admin');
-console.log(user1.getName()); // Petro
-console.log(user1.getRole()); // admin
+const user1 = new User('Петро', 'admin');
+console.log(user1.getName()); 
+console.log(user1.getRole()); 
 user1.login();
-console.log(user1.isLoggedIn); // true
-user1.changeName('Peter');
-console.log(user1.getName()); // Peter
+console.log(user1.isLogIn); 
+user1.changeName('Іван');
+console.log(user1.getName()); 
 
-const admin1 = new Admin('John');
-const user2 = new User('Sarah', 'user');
+const admin1 = new Admin('Вася');
+const user2 = new User('Валєра', 'user');
 admin1.addUser(user1);
 admin1.addUser(user2);
-console.log(admin1.getAllUsers()); // [user1, user2]
+console.log(admin1.getAllUsers()); 
 admin1.changeUserRole(user2, 'admin');
-console.log(user2.getRole()); // admin
+console.log(user2.getRole()); 
 admin1.removeUser(user1);
-console.log(admin1.getAllUsers()); // [user2]
+console.log(admin1.getAllUsers()); 
 admin1.removeAllUsers();
-console.log(admin1.getAllUsers()); // []
+console.log(admin1.getAllUsers()); 

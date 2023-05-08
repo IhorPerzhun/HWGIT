@@ -1,0 +1,25 @@
+.blog{
+    width: 810px;
+    background-color: #D9D9D9;
+    text-align: center;
+}
+
+.title{
+    padding-top: 17px;
+    margin-bottom: 15px;
+}
+
+.blogList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 27px;
+    margin-bottom: 24px;
+}
+
+.blogList__item{
+    width: 759px;
+    height: 70px;
+    background-color: #F9D7D7;
+}

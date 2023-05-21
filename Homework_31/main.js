@@ -1,4 +1,28 @@
-const API = "http://www.omdbapi.com/?i=tt3896198&apikey=33a1b2"
+/*const API = "http://www.omdbapi.com/?i=tt3896198&apikey=33a1b2";
+
+const allData = "http://www.omdbapi.com/?apikey=[http://www.omdbapi.com/?i=tt3896198&apikey=33a1b2]&";
+const poster = "http://img.omdbapi.com/?apikey=[http://www.omdbapi.com/?i=tt3896198&apikey=33a1b2]&"*/
+
+fetch ('https://dummyjson.com/products')
+  .then ((response) => response.json ())
+  .then (data => {
+    console.log(data);
+  })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*const API = "http://www.omdbapi.com/?i=tt3896198&apikey=33a1b2"
 
 
 const apiKey = "http://www.omdbapi.com/?i=tt3896198&apikey=33a1b2";
@@ -27,4 +51,4 @@ searchForm.addEventListener('submit', (event) => {
     .catch(error => {
       console.error('Error:', error);
     });
-});
+});*/

@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input{
+    border-bottom: 1px solid green;
+    max-width: 600px;
+}
+
+input::placeholder{
+    color: green ;
+    opacity: 0.5;
+}
+textarea{
+    border-bottom: 1px solid green;
+}
+
+textarea::placeholder{
+    color: #008000;
+    opacity: 0.5;
+}
+
+label{
+    color: #008000;
+}
+
+
+

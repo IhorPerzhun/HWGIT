@@ -1,0 +1,91 @@
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  
+
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.navnav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navmenu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+
+
+
+
+#navbar h2 a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  background: linear-gradient(90.35deg, #1663f3, #1e7de9, #0bd7f1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+}
+
+#navbar form {
+  display: flex;
+  gap: 0.5rem;
+  padding-top: 10px;
+}
+
+#navbar input {
+  padding: 0.3rem 2.5rem;
+  border-radius: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  border: none;
+  outline: rgba(255, 255, 255, 0.2) solid 1px;
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.4s;
+}
+
+#navbar input::placeholder {
+  color: #fff;
+  font-weight: 550;
+  font-size: 0.83rem;
+  font-style: italic;
+}
+
+#navbar input:focus {
+  outline: none;
+}
+
+#navbar form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 0.3rem 1rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+#navbar form button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}

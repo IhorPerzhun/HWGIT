@@ -1,0 +1,469 @@
+// $breakpointsValue:
+$breakpoint-xs: 480px;
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1280px;
+$breakpoint-2xl: 1536px;
+
+$breakpoints: (
+    'xs': $breakpoint-xs,
+    'sm': $breakpoint-sm,
+    'md': $breakpoint-md,
+    'lg': $breakpoint-lg,
+    'xl': $breakpoint-xl,
+    '2xl': $breakpoint-2xl
+);
+
+@mixin breakpoint($br: '3xl') {
+    @media screen and (max-width: map-get($breakpoints, $br)) {
+        @content;
+    }
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.backgroundApp{
+  background-image: url(../../assets/bg_ua.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+}
+
+.title{
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: center;
+  gap: 10px;
+  padding-left: 20px;
+  padding-top: 20px;
+  border-bottom: 2px solid #377be2;
+  @media screen and (min-width: 250px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: 640px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: 992px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.title img{
+  width: 10em;
+  @media screen and (min-width: 250px){
+    width: 7em;
+  }
+  @media screen and (min-width: 480px) {
+    width: 8em;
+  }
+  @media screen and (min-width: 640px) {
+    width: 10em;
+  }
+  @media screen and (min-width: 992px) {
+    width: 15em;
+  }
+}
+
+.title h1{
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  @media screen and (min-width: 250px) {
+    font-size: 1.5em;
+  }
+  @media screen and (min-width: 480px) {
+    font-size: 2em;
+  }
+  @media screen and (min-width: 992px) {
+    font-size: 3.2em;
+  }
+}
+
+
+.title p{
+  text-align: center;
+  color: white;
+  @media screen and (min-width: 480px) {
+    font-size: 0.8em;
+  }
+  @media screen and (min-width: 992px) {
+    font-size: 1.5em;
+  }
+  
+}
+
+.defaultCity{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 2px solid #377be2;
+  margin-bottom: 5px;
+  @media screen and (min-width: 250px) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: 480px) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: 640px) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: 992px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+}
+
+.cityText{
+  @media screen and (min-width: 250px) {
+    font-size: 1.2em;
+  }
+
+  @media screen and (min-width: 480px) {
+    font-size: 1.3em;
+  }
+  @media screen and (min-width: 640px) {
+    font-size: 1.4em;
+  }
+  @media screen and (min-width: 992px) {
+    font-size: 1.5em;
+  }
+}
+
+.searchContainer{
+  display: flex;
+  flex-direction: row;
+  @media screen and (min-width: 250px) {
+    flex-direction: column;
+  }
+  
+  
+  @media screen and (min-width: 480px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 640px) {
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 20px;
+  }
+  @media screen and (min-width: 992px) {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+}
+
+.formLocation{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 4px;
+
+  @media screen and (min-width: 250px){
+    gap: 5px;
+  }
+  @media screen and (min-width: 480px){
+    gap: 9px;
+  }
+  @media screen and (min-width: 640px){
+    gap: 12px;
+  }
+  @media screen and (min-width: 992px){
+    gap: 20px;
+  }
+
+}
+
+.selectTemp{
+  display: flex;
+  flex-direction: row;
+  @media screen and (min-width: 250px) {
+    justify-content: center;
+  }
+  @media screen and (min-width: 480px) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 640px) {
+    justify-content: center;
+    margin-bottom: 4px;
+  }
+  @media screen and (min-width: 992px) {
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+
+}
+
+.date{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.dateText{
+  color: white;
+  font-size: 1em;
+  @media screen and (min-width: 250px) {
+    text-align: center;
+    padding: 0 20px;
+  }
+  @media screen and (min-width: 480px) {
+    text-align: center;
+    padding: 0 20px;
+  }
+  @media screen and (min-width: 640px) {
+    text-align: center;
+    padding: 0 20px;
+    font-size: 1.3em;
+  }
+  @media screen and (min-width: 992px) {
+    text-align: center;
+    padding: 0 20px;
+    font-size: 1.7em;
+  }
+
+}
+
+.currentCity{
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 250px) {
+    margin-top: 10px;
+  }
+  @media screen and (min-width: 480px) {
+    margin-top: 10px;
+  }
+  @media screen and (min-width: 640px) {
+    margin-top: 20px;
+  }
+  @media screen and (min-width: 992px) {
+    margin-top: 25px;
+  }
+
+}
+
+.currentCityText{
+  color: #377be2;
+  font-weight: bold;
+  text-shadow: 3px 1px 1px rgb(43, 42, 42);
+  font-size: 2em;
+  @media screen and (min-width: 250px) {
+    font-size: 2em;
+  }
+  @media screen and (min-width: 480px) {
+    font-size: 3em;
+  }
+  @media screen and (min-width: 640px) {
+    font-size: 4em;
+  }
+  @media screen and (min-width: 992px) {
+    font-size: 5em;
+  }
+
+}
+
+.currentTemp{
+  color: #377be2;
+  font-weight: bold;
+  font-size: 3rem;
+  text-shadow: 3px 1px 1px rgb(43, 42, 42);
+  @media screen and (min-width: 250px){
+    font-size: 2.5em;
+  }
+  @media screen and (min-width: 480px){
+    font-size: 3em;
+  }
+  @media screen and (min-width: 640px){
+    font-size: 3.4em;
+  }
+  @media screen and (min-width: 992px){
+    font-size: 4em;
+  }
+}
+
+.devider{
+  @media screen and (min-width: 250px){
+    font-weight: 100;
+    font-size: 4em;
+  }
+
+  @media screen and (min-width: 640px){
+    font-weight: 100;
+    font-size: 3.2em;
+  }
+  @media screen and (min-width: 992px){
+    font-weight: 100;
+    font-size: 1.5em;
+  }
+
+}
+.forecastTitle{
+  color: white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  @media screen and (min-width: 250px) {
+    text-align: center;
+  }
+  
+  @media screen and (min-width: 480px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 640px) {
+    
+    
+  }
+  @media screen and (min-width: 640px) {
+    
+    
+  }
+  
+}
+
+.forecastContainer{
+  display: flex;
+  justify-content: flex-start;
+  @media screen and (min-width: 250px) {
+    justify-content: center;
+    margin-top: 3px;
+  }
+  
+  @media screen and (min-width: 480px) {
+    justify-content: center;
+    margin-top: 5px;
+  }
+
+  @media screen and (min-width: 640px) {
+    justify-content: center;
+    margin-top: 8px;
+  }
+  @media screen and (min-width: 992px) {
+    justify-content: flex-start;
+    margin-top: 12px;
+  }
+}
+
+.forecastItem{
+  text-align: center;
+  font-size: 1.1rem;
+  @media screen and (min-width: 250px){
+    font-size: 0.6em
+  }
+  @media screen and (min-width: 480px){
+    font-size: 0.8em
+  }
+  @media screen and (min-width: 992px){
+    font-size: 1.5em;
+  }
+
+}
+
+.forecastTemp{
+  text-align: center;
+  font-size: 1.3rem;
+  @media screen and (min-width: 250px){
+    font-size: 1.1rem;
+  }
+  @media screen and (min-width: 480px){
+    font-size: 1.4rem;
+  }
+
+}
+
+
+
+.containerr {
+  max-width: 1050px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 100px;
+  
+
+  @include breakpoint('2xl') {
+      max-width: 60%;
+      padding: 20px 30px;
+  }
+
+  @include breakpoint('xl') {
+      max-width: 60%;
+      padding: 20px 30px;
+  }
+
+  @include breakpoint('lg') {
+      max-width: 75%;
+      padding: 20px 30px;
+  }
+
+  @include breakpoint('md') {
+      max-width: 80%;
+      padding: 10px 30px;
+  }
+
+  @include breakpoint('sm') {
+      max-width: 85%;
+      padding: 5px 20px;
+  }
+
+  @include breakpoint('xs') {
+      max-width: 90%;
+      padding: 0 15px;
+  }
+}
+
+

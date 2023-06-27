@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+
+
+.StyledWeatherContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Ubuntu", sans-serif;
+  height: inherit;
+  background-image: url(./../../assets/images/bg_ua.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

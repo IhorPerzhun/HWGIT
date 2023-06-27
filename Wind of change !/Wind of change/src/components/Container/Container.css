@@ -1,0 +1,56 @@
+
+.CenterContainerBlock{
+    display: flex;
+    flex-direction:column;
+    gap: 1.5rem;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2rem;
+    max-width: 600px;
+    min-width: 400px;
+    width: 100%;
+    font-size: 2.5rem;
+}
+
+
+
+.HighLow{
+    display: flex;
+    flex-direction:row;
+    gap: 1rem;
+    font-size: 1.4rem;
+    color: rgb(228, 230, 229);
+    text-shadow: #000 3px 1px 10px;
+}
+
+
+
+.WeatherDesc{
+    font-size: 1.4rem;
+    color: rgb(18, 19, 19);
+    text-shadow: #cfcfcf 3px 1px 10px;
+
+
+}
+.Temperature{
+    font-size: 3.5rem;
+    color: rgb(18, 19, 19);
+    text-shadow: #cfcfcf 3px 1px 10px;
+
+    
+    
+
+}
+
+.city{
+    color: rgb(196, 193, 60);
+    border: 1px solid wheat;
+    border-radius: 20px;
+    background-color: rgba(240, 255, 255, 0.7);
+    padding: 5px;
+    box-shadow: 5px 5px 5px  rgba(175, 177, 177, 0.568);
+
+}
+
+

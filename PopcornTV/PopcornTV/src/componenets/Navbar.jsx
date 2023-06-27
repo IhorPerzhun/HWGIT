@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { BiCameraMovie, BiSearchAlt2 } from 'react-icons/bi';
-
 import './Navbar.css';
 
 const Navbar = () => {
@@ -46,10 +45,18 @@ const Navbar = () => {
         </div>
 
         <div className='navsearch'>
-          
 
           <form onSubmit={handleSubmit}>
-               
+            
+            <select>
+              <option value="">Select a genre</option>
+            </select>
+            <select>
+              <option value="">Select a year</option>
+            </select>
+            <select>
+              <option value="">Select a rating</option>
+            </select>   
             <input
               type="text"
               placeholder="Search a movie by title..."

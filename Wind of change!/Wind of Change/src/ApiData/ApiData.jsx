@@ -4,7 +4,7 @@ const API_KEY = '0733a9a36ed76b4d2bc109a42a04b414';
 const BASE_URL = 'https://api.openweathermap.org/data/2.5';
 
 //дані  з API
-const getWeatherData = (infoType, searchParams) =>{
+const getGeoData = (infoType, searchParams) =>{
     const url = new URL(BASE_URL + '/' + infoType);
     url.search = new URLSearchParams({...searchParams, appid:API_KEY});
 
@@ -53,11 +53,13 @@ const formatForecastWeather = (data) =>{
 
 
 const getFormattedWeatherData = async (searchParams) => {
-    const formattedCurrentWeather = await getWeatherData('weather',searchParams)
+   //current 
+    const formattedCurrentWeather = await getGeoData('weather',searchParams)
     .then(formatCurrentWeather)
 
     const {lat,lon} = formattedCurrentWeather
-    const formattedForecastWeather = await getWeatherData('onecall',{
+    //5 days
+    const formattedForecastWeather = await getGeoData('onecall',{
         lat, lon, exclude: 'current, minutely, alerts', units: searchParams.units
     }).then(formatForecastWeather)
 
